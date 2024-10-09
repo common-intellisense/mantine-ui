@@ -1,0 +1,12 @@
+{
+  "name": "MantineProvider",
+  "props": {},
+  "link": "https://mantine.dev/x/modals/",
+  "link_zh": "https://mantine.dev/x/modals/",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "MantineProvider"
+}
