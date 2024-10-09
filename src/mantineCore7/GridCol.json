@@ -1,0 +1,37 @@
+{
+  "name": "Grid.Col",
+  "props": {
+    "offset": {
+      "default": "",
+      "value": "",
+      "type": "StyleProp<number>",
+      "description": "Column offset on the left side – number of columns that should be left empty before this column",
+      "required": false,
+      "description_zh": "Column offset on the left side – 在此列之前应留空的列数"
+    },
+    "order": {
+      "default": "",
+      "value": "",
+      "type": "StyleProp<number>",
+      "description": "Column order, can be used to reorder columns at different viewport sizes",
+      "required": false,
+      "description_zh": "列顺序，可用于对不同视区大小的列进行重新排序"
+    },
+    "span": {
+      "default": "",
+      "value": "",
+      "type": "StyleProp<ColSpan>",
+      "description": "Column span, 12 by default",
+      "required": false,
+      "description_zh": "列跨度，默认为 12"
+    }
+  },
+  "link": "https://mantine.dev/core/grid/?t=props",
+  "link_zh": "https://mantine.dev/core/grid/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "GridCol"
+}

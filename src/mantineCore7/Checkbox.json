@@ -1,0 +1,125 @@
+{
+  "name": "Checkbox",
+  "props": {
+    "autoContrast": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether icon color with filled variant should depend on background-color. If luminosity of the color prop is less than theme.luminosityThreshold, then theme.white will be used for text color, otherwise theme.black. Overrides theme.autoContrast.",
+      "required": false,
+      "description_zh": "确定具有 filled 变体的图标颜色是否应取决于 background-color。如果 color 属性的亮度小于 theme.luminosityThreshold，则 theme.white 将用于文本颜色，否则使用 theme.black。覆盖 theme.autoContrast。"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color to set input background color in checked state, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "将输入背景颜色设置为选中状态的 theme.colors 的键或任何有效的 CSS 颜色，默认为 theme.primaryColor"
+    },
+    "description": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Description displayed below the label",
+      "required": false,
+      "description_zh": "标签下方显示的描述"
+    },
+    "error": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Error message displayed below the label",
+      "required": false,
+      "description_zh": "标签下方显示错误消息"
+    },
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "FC<{ indeterminate: boolean; className: string; }> | undefined",
+      "description": "Icon displayed when checkbox is in checked or indeterminate state",
+      "required": false,
+      "description_zh": "复选框处于选中状态或不确定状态时显示的图标"
+    },
+    "iconColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color to set icon color, by default value depends on theme.autoContrast",
+      "required": false,
+      "description_zh": "key的 theme.colors 或任何有效的 CSS 颜色来设置图标颜色，默认值取决于 theme.autoContrast"
+    },
+    "id": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Id used to connect input with the label. If not set, unique id is generated instead.",
+      "required": false,
+      "description_zh": "用于将 input 与标签连接的 ID。如果未设置，则改为生成唯一 ID。"
+    },
+    "indeterminate": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Indeterminate state of the checkbox. If set, checked prop is ignored.",
+      "required": false,
+      "description_zh": "复选框的 Indeterminate 状态。如果设置，则忽略 checked prop。"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content of the label associated with the checkbox",
+      "required": false,
+      "description_zh": "与复选框关联的标签的内容"
+    },
+    "labelPosition": {
+      "default": "",
+      "value": "",
+      "type": "\"left\" | \"right\"",
+      "description": "Position of the label relative to the input, 'right' by default",
+      "required": false,
+      "description_zh": "标签相对于输入的位置，默认为 'right'"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "theme.radius 的键或任何用于设置 border-radius 的任何有效 CSS 值，默认为 theme.defaultRadius"
+    },
+    "rootRef": {
+      "default": "",
+      "value": "",
+      "type": "ForwardedRef<HTMLDivElement>",
+      "description": "Assigns ref of the root element",
+      "required": false,
+      "description_zh": "分配根元素的 ref"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls size of the component, 'sm' by default",
+      "required": false,
+      "description_zh": "控制组件的大小，默认为 'sm'"
+    },
+    "wrapperProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the root element",
+      "required": false,
+      "description_zh": "向下传递到根元素的 props"
+    }
+  },
+  "link": "https://mantine.dev/core/checkbox/?t=props",
+  "link_zh": "https://mantine.dev/core/checkbox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Checkbox"
+}

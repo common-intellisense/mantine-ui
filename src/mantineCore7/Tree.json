@@ -1,0 +1,85 @@
+{
+  "name": "Tree",
+  "props": {
+    "allowRangeSelection": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tree nodes range can be selected with click when Shift key is pressed, true by default",
+      "required": false,
+      "description_zh": "确定在按下 Shift 键时是否可以通过单击来选择树节点范围，默认情况下为 true"
+    },
+    "clearSelectionOnOutsideClick": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether selection should be cleared when user clicks outside of the tree, false by default",
+      "required": false,
+      "description_zh": "确定当用户在树外部单击时是否应清除选择，默认情况下为 false"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "TreeNodeData[]",
+      "description": "Data used to render nodes",
+      "required": false,
+      "description_zh": "用于渲染节点的数据"
+    },
+    "expandOnClick": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tree node with children should be expanded on click, true by default",
+      "required": false,
+      "description_zh": "确定是否应在单击时展开具有子项的树节点，默认情况下为 true"
+    },
+    "expandOnSpace": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tree node with children should be expanded on space key press, true by default",
+      "required": false,
+      "description_zh": "确定是否应在按空格键时展开具有子项的树节点，默认情况下为 true"
+    },
+    "levelOffset": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Horizontal padding of each subtree level, key of theme.spacing or any valid CSS value, 'lg' by default",
+      "required": false,
+      "description_zh": "每个子树级别的水平填充、theme.spacing 的键或任何有效的 CSS 值，默认为 'lg'"
+    },
+    "renderNode": {
+      "default": "",
+      "value": "",
+      "type": "RenderNode",
+      "description": "A function to render tree node label",
+      "required": false,
+      "description_zh": "渲染树节点标签的函数"
+    },
+    "selectOnClick": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether node should be selected on click, false by default",
+      "required": false,
+      "description_zh": "确定是否应在单击时选择节点，默认情况下为 false"
+    },
+    "tree": {
+      "default": "",
+      "value": "",
+      "type": "UseTreeReturnType",
+      "description": "Use-tree hook instance that can be used to manipulate component state",
+      "required": false,
+      "description_zh": "可用于操作组件状态的 use-tree 钩子实例"
+    }
+  },
+  "link": "https://mantine.dev/core/tree/?t=props",
+  "link_zh": "https://mantine.dev/core/tree/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Tree"
+}

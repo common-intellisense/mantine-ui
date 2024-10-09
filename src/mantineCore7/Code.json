@@ -1,0 +1,29 @@
+{
+  "name": "Code",
+  "props": {
+    "block": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set code will be rendered inside pre, false by default",
+      "required": false,
+      "description_zh": "如果设置的代码将在 pre 中呈现，则默认为 false"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color, controls background-color of the code, by default value is calculated based on color scheme",
+      "required": false,
+      "description_zh": "key的 theme.colors 或任何有效的 CSS 颜色，控制代码的 background-color，默认情况下值是根据配色方案计算的"
+    }
+  },
+  "link": "https://mantine.dev/core/code/?t=props",
+  "link_zh": "https://mantine.dev/core/code/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Code"
+}

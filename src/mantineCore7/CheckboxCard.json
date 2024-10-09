@@ -1,0 +1,48 @@
+{
+  "name": "Checkbox.Card",
+  "props": {
+    "checked": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Checked state",
+      "required": false,
+      "description_zh": "选中状态"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，theme.defaultRadius"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Value of the checkbox, used with Checkbox.Group",
+      "required": false,
+      "description_zh": "复选框的值，与 Checkbox.Group 一起使用"
+    },
+    "withBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the card should have border, true by default",
+      "required": false,
+      "description_zh": "确定卡片是否应具有 border，默认情况下为 true"
+    }
+  },
+  "link": "https://mantine.dev/core/checkbox/?t=props",
+  "link_zh": "https://mantine.dev/core/checkbox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Checkbox",
+    "Checkbox.Indicator"
+  ],
+  "filename": "CheckboxCard"
+}

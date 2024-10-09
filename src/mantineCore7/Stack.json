@@ -1,0 +1,37 @@
+{
+  "name": "Stack",
+  "props": {
+    "align": {
+      "default": "",
+      "value": "",
+      "type": "AlignItems",
+      "description": "Controls align-items CSS property, 'stretch' by default",
+      "required": false,
+      "description_zh": "控制 align-items CSS 属性，默认为 'stretch'"
+    },
+    "gap": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Key of theme.spacing or any valid CSS value to set gap property, numbers are converted to rem, 'md' by default",
+      "required": false,
+      "description_zh": "key的 theme.spacing 或任何有效的 CSS 值来设置 gap 属性，数字默认转换为 rem，'md'"
+    },
+    "justify": {
+      "default": "",
+      "value": "",
+      "type": "JustifyContent",
+      "description": "Controls justify-content CSS property, 'flex-start' by default",
+      "required": false,
+      "description_zh": "控制 justify-content CSS 属性，默认为 'flex-start'"
+    }
+  },
+  "link": "https://mantine.dev/core/stack/?t=props",
+  "link_zh": "https://mantine.dev/core/stack/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Stack"
+}

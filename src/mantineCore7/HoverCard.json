@@ -1,0 +1,287 @@
+{
+  "name": "HoverCard",
+  "props": {
+    "arrowOffset": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Arrow offset in px, 5 by default",
+      "required": false,
+      "description_zh": "箭头偏移量（以 px 为单位），默认为 5"
+    },
+    "arrowPosition": {
+      "default": "",
+      "value": "",
+      "type": "ArrowPosition",
+      "description": "Arrow position",
+      "required": false,
+      "description_zh": "箭头位置"
+    },
+    "arrowRadius": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Arrow border-radius in px, 0 by default",
+      "required": false,
+      "description_zh": "箭头 border-radius （以 px 为单位），默认为 0"
+    },
+    "arrowSize": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Arrow size in px, 7 by default",
+      "required": false,
+      "description_zh": "箭头大小（以 px 为单位），默认为 7"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Popover.Target and Popover.Dropdown components",
+      "required": false,
+      "description_zh": "Popover.Target 和 Popover.Dropdown 组件"
+    },
+    "clickOutsideEvents": {
+      "default": "",
+      "value": "",
+      "type": "string[]",
+      "description": "Events that trigger outside clicks",
+      "required": false,
+      "description_zh": "触发外部点击的事件"
+    },
+    "closeDelay": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Close delay in ms",
+      "required": false,
+      "description_zh": "关闭延迟（毫秒）"
+    },
+    "closeOnClickOutside": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether dropdown should be closed on outside clicks, true by default",
+      "required": false,
+      "description_zh": "确定是否应在外部点击时关闭下拉列表，默认情况下为 true"
+    },
+    "closeOnEscape": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether dropdown should be closed when Escape key is pressed, true by default",
+      "required": false,
+      "description_zh": "确定按下 Escape 键时是否应关闭下拉列表，默认为 true"
+    },
+    "defaultOpened": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Initial opened state for uncontrolled component",
+      "required": false,
+      "description_zh": "不受控制的零部件的初始打开状态"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, popover dropdown will not be rendered",
+      "required": false,
+      "description_zh": "如果设置，则不会呈现 popover 下拉列表"
+    },
+    "floatingStrategy": {
+      "default": "",
+      "value": "",
+      "type": "FloatingStrategy",
+      "description": "Changes floating ui position strategy, 'absolute' by default",
+      "required": false,
+      "description_zh": "更改浮动 ui 位置策略，默认为 'absolute'"
+    },
+    "id": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Id base to create accessibility connections",
+      "required": false,
+      "description_zh": "用于创建辅助功能连接的 Id base"
+    },
+    "initiallyOpened": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Initial opened state",
+      "required": false,
+      "description_zh": "初始打开状态"
+    },
+    "keepMounted": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set dropdown will not be unmounted from the DOM when it is hidden, display: none styles will be added instead",
+      "required": false,
+      "description_zh": "如果 set 下拉列表在隐藏时不会从 DOM 中卸载，则会添加 display： none 样式"
+    },
+    "middlewares": {
+      "default": "",
+      "value": "",
+      "type": "PopoverMiddlewares",
+      "description": "Floating ui middlewares to configure position handling, { flip: true, shift: true, inline: false } by default",
+      "required": false,
+      "description_zh": "浮动 ui 中间件配置位置处理，默认 { flip： true， shift： true， inline： false }"
+    },
+    "offset": {
+      "default": "",
+      "value": "",
+      "type": "number | FloatingAxesOffsets",
+      "description": "Offset of the dropdown element, 8 by default",
+      "required": false,
+      "description_zh": "下拉元素的偏移量，默认为 8"
+    },
+    "onClose": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when dropdown is closed",
+      "required": false,
+      "description_zh": "关闭下拉列表时调用"
+    },
+    "onOpen": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when dropdown is opened",
+      "required": false,
+      "description_zh": "打开下拉列表时调用"
+    },
+    "onPositionChange": {
+      "default": "",
+      "value": "",
+      "type": "((position: FloatingPosition) => void)",
+      "description": "Called when dropdown position changes",
+      "required": false,
+      "description_zh": "下拉位置更改时调用"
+    },
+    "openDelay": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Open delay in ms",
+      "required": false,
+      "description_zh": "开路延迟（毫秒）"
+    },
+    "portalProps": {
+      "default": "",
+      "value": "",
+      "type": "Omit<PortalProps, \"children\">",
+      "description": "Props to pass down to the Portal when withinPortal is true",
+      "required": false,
+      "description_zh": "当 withinPortal 为 true 时传递给 Portal 的 props"
+    },
+    "position": {
+      "default": "",
+      "value": "",
+      "type": "FloatingPosition",
+      "description": "Dropdown position relative to the target element, 'bottom' by default",
+      "required": false,
+      "description_zh": "相对于目标元素的下拉位置，默认为 'bottom'"
+    },
+    "positionDependencies": {
+      "default": "",
+      "value": "",
+      "type": "any[]",
+      "description": "useEffect dependencies to force update dropdown position, [] by default",
+      "required": false,
+      "description_zh": "useEffect 依赖项强制更新下拉位置，默认为 []"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "theme.radius 的键或任何用于设置 border-radius 的任何有效 CSS 值，默认为 theme.defaultRadius"
+    },
+    "returnFocus": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether focus should be automatically returned to control when dropdown closes, false by default",
+      "required": false,
+      "description_zh": "确定下拉列表关闭时是否应自动将焦点返回到控件，默认情况下为 false"
+    },
+    "shadow": {
+      "default": "",
+      "value": "",
+      "type": "MantineShadow",
+      "description": "Key of theme.shadows or any other valid CSS box-shadow value",
+      "required": false,
+      "description_zh": "theme.shadows 的键或任何其他有效的 CSS box-shadow 值"
+    },
+    "transitionProps": {
+      "default": "",
+      "value": "",
+      "type": "TransitionProps",
+      "description": "Props passed down to the Transition component that used to animate dropdown presence, use to configure duration and animation type, { duration: 150, transition: 'fade' } by default",
+      "required": false,
+      "description_zh": "传递给 Transition 组件的 props，用于为下拉列表显示添加动画效果，用于配置持续时间和动画类型，默认为 { duration： 150， transition： 'fade' }"
+    },
+    "trapFocus": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether focus should be trapped within dropdown, false by default",
+      "required": false,
+      "description_zh": "确定是否应将焦点困在下拉列表中，默认为 false"
+    },
+    "width": {
+      "default": "",
+      "value": "",
+      "type": "PopoverWidth",
+      "description": "Dropdown width, or 'target' to make dropdown width the same as target element, 'max-content' by default",
+      "required": false,
+      "description_zh": "下拉宽度，或使下拉宽度与目标元素相同，默认为 'max-content'"
+    },
+    "withArrow": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether component should have an arrow, false by default",
+      "required": false,
+      "description_zh": "确定组件是否应具有箭头，默认情况下为 false"
+    },
+    "withRoles": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether dropdown and target elements should have accessible roles, true by default",
+      "required": false,
+      "description_zh": "确定 dropdown 和 target 元素是否应具有可访问的角色，默认情况下为 true"
+    },
+    "withinPortal": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether dropdown should be rendered within the Portal, true by default",
+      "required": false,
+      "description_zh": "确定是否应在 Portal 中呈现下拉列表，默认为 true"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Dropdown z-index, 300 by default",
+      "required": false,
+      "description_zh": "下拉列表 z-index，默认为 300"
+    }
+  },
+  "link": "https://mantine.dev/core/hover-card/?t=props",
+  "link_zh": "https://mantine.dev/core/hover-card/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "HoverCard.Target"
+  ],
+  "filename": "HoverCard"
+}

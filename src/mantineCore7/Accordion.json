@@ -1,0 +1,109 @@
+{
+  "name": "Accordion",
+  "props": {
+    "chevron": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Custom chevron icon that will be used in all items",
+      "required": false,
+      "description_zh": "将用于所有商品的自定义 V 形图标"
+    },
+    "chevronPosition": {
+      "default": "",
+      "value": "",
+      "type": "AccordionChevronPosition",
+      "description": "Position of the chevron relative to the item label, right by default",
+      "required": false,
+      "description_zh": "V 形图标相对于商品标签的位置，默认为 right"
+    },
+    "chevronSize": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Size of the chevron icon container, 24 by default",
+      "required": false,
+      "description_zh": "V 形图标容器的大小，默认为 24"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "string | string[] | null",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "disableChevronRotation": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether chevron rotation should be disabled, false by default",
+      "required": false,
+      "description_zh": "确定是否应禁用 V 形旋转，默认为 false"
+    },
+    "loop": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether arrow key presses should loop though items (first to last and last to first), true by default",
+      "required": false,
+      "description_zh": "确定箭头键按下是否应在项目之间循环（第一个到最后一个和最后一个到第一个），默认情况下为 true"
+    },
+    "multiple": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether multiple items can be opened at a time, false by default",
+      "required": false,
+      "description_zh": "确定是否可以一次打开多个项目，默认为 false"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: AccordionValue<Multiple>) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "order": {
+      "default": "",
+      "value": "",
+      "type": "AccordionHeadingOrder",
+      "description": "Heading order, has no effect on visuals",
+      "required": false,
+      "description_zh": "标题顺序，对视觉对象没有影响"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem. theme.defaultRadius by default.",
+      "required": false,
+      "description_zh": "key） 或任何用于设置 border-radius 的有效 CSS 值。默认情况下，数字会转换为 rem. theme.defaultRadius。"
+    },
+    "transitionDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Transition duration in ms, 200 by default",
+      "required": false,
+      "description_zh": "过渡持续时间（以毫秒为单位），默认为 200"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string | string[] | null",
+      "description": "Value for controlled component",
+      "required": false,
+      "description_zh": "受控组件的值"
+    }
+  },
+  "link": "https://mantine.dev/core/accordion/?t=props",
+  "link_zh": "https://mantine.dev/core/accordion/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Accordion"
+}

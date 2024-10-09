@@ -1,0 +1,29 @@
+{
+  "name": "List.Item",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Item content",
+      "required": false,
+      "description_zh": "项目内容"
+    },
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Icon to replace item bullet",
+      "required": false,
+      "description_zh": "用于替换项目项目符号的图标"
+    }
+  },
+  "link": "https://mantine.dev/core/list/?t=props",
+  "link_zh": "https://mantine.dev/core/list/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ListItem"
+}

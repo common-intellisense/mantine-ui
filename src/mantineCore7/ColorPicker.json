@@ -1,0 +1,133 @@
+{
+  "name": "ColorPicker",
+  "props": {
+    "alphaLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Alpha slider aria-label prop",
+      "required": false,
+      "description_zh": "Alpha 滑块 aria-label 属性"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Uncontrolled component default value",
+      "required": false,
+      "description_zh": "非受控零部件默认值"
+    },
+    "focusable": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether interactive elements (sliders thumbs and swatches) should be focusable, true by default",
+      "required": false,
+      "description_zh": "确定交互式元素（滑块、缩略图和色板）是否应可聚焦，默认情况下为 true"
+    },
+    "format": {
+      "default": "",
+      "value": "",
+      "type": "ColorFormat",
+      "description": "Color format, 'hex' by default",
+      "required": false,
+      "description_zh": "颜色格式，默认为 'hex'"
+    },
+    "fullWidth": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the component should take 100% width of its container, false by default",
+      "required": false,
+      "description_zh": "确定组件是否应占用其容器的 100% 宽度，默认为 false"
+    },
+    "hueLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Hue slider aria-label prop",
+      "required": false,
+      "description_zh": "色相滑块 aria-label prop"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: string) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "onChangeEnd": {
+      "default": "",
+      "value": "",
+      "type": "((value: string) => void)",
+      "description": "Called when the user stops dragging one of the sliders or changes the value with arrow keys",
+      "required": false,
+      "description_zh": "当用户停止拖动其中一个滑块或使用箭头键更改值时调用"
+    },
+    "onColorSwatchClick": {
+      "default": "",
+      "value": "",
+      "type": "((color: string) => void)",
+      "description": "Called when one of the color swatches is clicked",
+      "required": false,
+      "description_zh": "单击其中一个色板时调用"
+    },
+    "saturationLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Saturation slider aria-label prop",
+      "required": false,
+      "description_zh": "饱和度滑块 aria-label 属性"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls size of hue, alpha and saturation sliders, 'md' by default",
+      "required": false,
+      "description_zh": "控制色相、alpha 和饱和度滑块的大小，默认为 'md'"
+    },
+    "swatches": {
+      "default": "",
+      "value": "",
+      "type": "string[]",
+      "description": "An array of colors in one of the supported formats. Used to render swatches list below the color picker.",
+      "required": false,
+      "description_zh": "采用受支持格式之一的颜色数组。用于渲染颜色选取器下方的色板列表。"
+    },
+    "swatchesPerRow": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of swatches per row, 7 by default",
+      "required": false,
+      "description_zh": "每行的色板数，默认为 7 个"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Controlled component value",
+      "required": false,
+      "description_zh": "受控组件值"
+    },
+    "withPicker": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the color picker should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示颜色选取器，默认为 true"
+    }
+  },
+  "link": "https://mantine.dev/core/color-picker/?t=props",
+  "link_zh": "https://mantine.dev/core/color-picker/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ColorPicker"
+}

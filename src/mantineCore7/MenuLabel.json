@@ -1,0 +1,14 @@
+{
+  "name": "Menu.Label",
+  "props": {},
+  "link": "https://mantine.dev/core/menu/?t=props",
+  "link_zh": "https://mantine.dev/core/menu/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Menu.Item"
+  ],
+  "filename": "MenuLabel"
+}

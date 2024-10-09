@@ -1,0 +1,29 @@
+{
+  "name": "Pagination.Control",
+  "props": {
+    "active": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether control should have active styles",
+      "required": false,
+      "description_zh": "确定控件是否应具有活动样式"
+    },
+    "withPadding": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether control should have padding, true by default",
+      "required": false,
+      "description_zh": "确定控件是否应具有填充，默认情况下为 true"
+    }
+  },
+  "link": "https://mantine.dev/core/pagination/?t=props",
+  "link_zh": "https://mantine.dev/core/pagination/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PaginationControl"
+}

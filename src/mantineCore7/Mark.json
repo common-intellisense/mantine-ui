@@ -1,0 +1,21 @@
+{
+  "name": "Mark",
+  "props": {
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color, yellow by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 颜色，默认为黄色"
+    }
+  },
+  "link": "https://mantine.dev/core/mark/?t=props",
+  "link_zh": "https://mantine.dev/core/mark/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Mark"
+}

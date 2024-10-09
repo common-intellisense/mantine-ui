@@ -1,0 +1,93 @@
+{
+  "name": "SemiCircleProgress",
+  "props": {
+    "emptySegmentColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color value, by default the value is determined based on the color scheme value",
+      "required": false,
+      "description_zh": "key或任何有效的 CSS 颜色值，默认情况下该值是根据配色方案值确定的"
+    },
+    "fillDirection": {
+      "default": "",
+      "value": "",
+      "type": "\"right-to-left\" | \"left-to-right\"",
+      "description": "Direction from which the circle is filled, 'left-to-right' by default",
+      "required": false,
+      "description_zh": "填充圆的方向，默认为“从左到右”"
+    },
+    "filledSegmentColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color value, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 颜色值，默认为 theme.primaryColor"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Label rendered inside the circle",
+      "required": false,
+      "description_zh": "在圆圈内呈现的标签"
+    },
+    "labelPosition": {
+      "default": "",
+      "value": "",
+      "type": "\"center\" | \"bottom\"",
+      "description": "Label position relative to the circle center, 'bottom' by default",
+      "required": false,
+      "description_zh": "标签位置相对于圆心，默认为 'bottom'"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "\"up\" | \"down\"",
+      "description": "Orientation of the circle, 'up' by default",
+      "required": false,
+      "description_zh": "圆的方向，默认为 'up'"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Diameter of the svg in px, 200 by default",
+      "required": false,
+      "description_zh": "svg 的直径（以 px 为单位），默认为 200"
+    },
+    "thickness": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Circle thickness in px, 12 by default",
+      "required": false,
+      "description_zh": "圆的粗细（以 px 为单位），默认为 12"
+    },
+    "transitionDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Transition duration of filled section styles changes in ms, 0 by default",
+      "required": false,
+      "description_zh": "填充截面样式的过渡持续时间更改（以毫秒为单位），默认为 0"
+    },
+    "value *": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Progress value from 0 to 100",
+      "required": false,
+      "description_zh": "进度值从 0 到 100"
+    }
+  },
+  "link": "https://mantine.dev/core/semi-circle-progress/?t=props",
+  "link_zh": "https://mantine.dev/core/semi-circle-progress/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "SemiCircleProgress"
+}

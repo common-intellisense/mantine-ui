@@ -1,0 +1,31 @@
+{
+  "name": "Menu.Target",
+  "props": {
+    "children *": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Target element",
+      "required": false,
+      "description_zh": "Target 元素"
+    },
+    "refProp": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the prop that should be used to get element ref",
+      "required": false,
+      "description_zh": "应该用于获取元素 ref 的 prop 的键"
+    }
+  },
+  "link": "https://mantine.dev/core/menu/?t=props",
+  "link_zh": "https://mantine.dev/core/menu/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Menu.Item"
+  ],
+  "filename": "MenuTarget"
+}

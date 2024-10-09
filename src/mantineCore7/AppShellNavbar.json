@@ -1,0 +1,29 @@
+{
+  "name": "AppShell.Navbar",
+  "props": {
+    "withBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether component should have a border, overrides withBorder prop on AppShell component",
+      "required": false,
+      "description_zh": "确定组件是否应该有边框，覆盖 AppShell 组件上的 withBorder 属性"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Component z-index, by default inherited from the AppShell",
+      "required": false,
+      "description_zh": "组件 z-index，默认继承自 AppShell"
+    }
+  },
+  "link": "https://mantine.dev/core/app-shell/?t=props",
+  "link_zh": "https://mantine.dev/core/app-shell/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "AppShellNavbar"
+}

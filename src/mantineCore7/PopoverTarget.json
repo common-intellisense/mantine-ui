@@ -1,0 +1,37 @@
+{
+  "name": "Popover.Target",
+  "props": {
+    "children *": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Target element",
+      "required": false,
+      "description_zh": "Target 元素"
+    },
+    "popupType": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Popup accessible type, 'dialog' by default",
+      "required": false,
+      "description_zh": "弹出窗口辅助类型，默认为 'dialog'"
+    },
+    "refProp": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the prop that should be used to access element ref",
+      "required": false,
+      "description_zh": "应该用于访问元素 ref 的 prop 的键"
+    }
+  },
+  "link": "https://mantine.dev/core/popover/?t=props",
+  "link_zh": "https://mantine.dev/core/popover/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PopoverTarget"
+}

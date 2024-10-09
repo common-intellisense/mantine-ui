@@ -1,0 +1,15 @@
+{
+  "name": "Menu.Dropdown",
+  "props": {},
+  "link": "https://mantine.dev/core/menu/?t=props",
+  "link_zh": "https://mantine.dev/core/menu/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Menu.Label",
+    "Menu.Item"
+  ],
+  "filename": "MenuDropdown"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Input.Label",
+  "props": {
+    "labelElement": {
+      "default": "",
+      "value": "",
+      "type": "\"div\" | \"label\"",
+      "description": "Root element of the label, 'label' by default",
+      "required": false,
+      "description_zh": "标签的根元素，默认为 'label'"
+    },
+    "required": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the required asterisk should be displayed",
+      "required": false,
+      "description_zh": "确定是否应显示所需的星号"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls label font-size, 'sm' by default",
+      "required": false,
+      "description_zh": "控制标签 font-size，默认为 'sm'"
+    }
+  },
+  "link": "https://mantine.dev/core/input/?t=props",
+  "link_zh": "https://mantine.dev/core/input/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "InputLabel"
+}

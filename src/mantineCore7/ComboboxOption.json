@@ -1,0 +1,45 @@
+{
+  "name": "Combobox.Option",
+  "props": {
+    "active": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the option is selected",
+      "required": false,
+      "description_zh": "确定是否选中该选项"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the option can be selected",
+      "required": false,
+      "description_zh": "确定是否可以选择选项"
+    },
+    "selected": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether item is selected, useful for virtualized comboboxes",
+      "required": false,
+      "description_zh": "确定是否选中 item，这对于虚拟化组合框很有用"
+    },
+    "value *": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Option value",
+      "required": false,
+      "description_zh": "选项值"
+    }
+  },
+  "link": "https://mantine.dev/core/combobox/?t=props",
+  "link_zh": "https://mantine.dev/core/combobox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ComboboxOption"
+}

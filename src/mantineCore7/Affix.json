@@ -1,0 +1,45 @@
+{
+  "name": "Affix",
+  "props": {
+    "portalProps": {
+      "default": "",
+      "value": "",
+      "type": "Omit<PortalProps, \"children\">",
+      "description": "Props to pass down to the Portal component when withinPortal is set",
+      "required": false,
+      "description_zh": "设置 withinPortal 时向下传递到 Portal 组件的 props"
+    },
+    "position": {
+      "default": "",
+      "value": "",
+      "type": "{ top?: string | number; left?: string | number | undefined; bottom?: string | number | undefined; right?: string | number | undefined; } | undefined",
+      "description": "Affix position on screen, defaults value is { bottom: 0, right: 0 }",
+      "required": false,
+      "description_zh": "在屏幕上附加位置，默认值为 { bottom： 0， right： 0 }"
+    },
+    "withinPortal": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether component should be rendered within portal, true by default",
+      "required": false,
+      "description_zh": "确定是否应在 Portal 中呈现组件，默认为 true"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Root element z-index property, 200 by default",
+      "required": false,
+      "description_zh": "根元素 z-index 属性，默认为 200"
+    }
+  },
+  "link": "https://mantine.dev/core/affix/?t=props",
+  "link_zh": "https://mantine.dev/core/affix/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Affix"
+}

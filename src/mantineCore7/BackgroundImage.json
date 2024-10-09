@@ -1,0 +1,29 @@
+{
+  "name": "BackgroundImage",
+  "props": {
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, 0 by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，0"
+    },
+    "src *": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Image url",
+      "required": false,
+      "description_zh": "图片网址"
+    }
+  },
+  "link": "https://mantine.dev/core/background-image/?t=props",
+  "link_zh": "https://mantine.dev/core/background-image/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "BackgroundImage"
+}

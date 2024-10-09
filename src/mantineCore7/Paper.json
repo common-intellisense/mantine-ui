@@ -1,0 +1,37 @@
+{
+  "name": "Paper",
+  "props": {
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，theme.defaultRadius"
+    },
+    "shadow": {
+      "default": "",
+      "value": "",
+      "type": "MantineShadow",
+      "description": "Key of theme.shadows or any valid CSS value to set box-shadow, none by default",
+      "required": false,
+      "description_zh": "key，或者任何有效的 CSS 值来设置 box-shadow，默认为 none"
+    },
+    "withBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the paper should have border, border color depends on color scheme, false by default",
+      "required": false,
+      "description_zh": "确定纸张是否应具有边框，边框颜色取决于配色方案，默认情况下为 false"
+    }
+  },
+  "link": "https://mantine.dev/core/paper/?t=props",
+  "link_zh": "https://mantine.dev/core/paper/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Paper"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Progress.Section",
+  "props": {
+    "animated": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the sections stripes should be animated, if set, striped prop is ignored, false by default",
+      "required": false,
+      "description_zh": "确定是否应该对 sections stripes 进行动画处理，如果设置，则忽略 striped prop，默认为 false"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS value, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 值，默认为 theme.primaryColor"
+    },
+    "striped": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the section should have stripes, false by default",
+      "required": false,
+      "description_zh": "确定该部分是否应具有条带，默认情况下为 false"
+    },
+    "value *": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Value of the section in 0–100 range",
+      "required": false,
+      "description_zh": "截面值在 0-100 范围内"
+    },
+    "withAria": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether aria-* props should be added to the root element, true by default",
+      "required": false,
+      "description_zh": "确定是否应将 aria-* props 添加到根元素中，默认为 true"
+    }
+  },
+  "link": "https://mantine.dev/core/progress/?t=props",
+  "link_zh": "https://mantine.dev/core/progress/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Progress.Label"
+  ],
+  "filename": "ProgressSection"
+}

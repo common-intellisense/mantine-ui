@@ -1,0 +1,29 @@
+{
+  "name": "PillsInput.Field",
+  "props": {
+    "pointer": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, cursor is changed to pointer",
+      "required": false,
+      "description_zh": "如果设置，则 cursor 将更改为 pointer"
+    },
+    "type": {
+      "default": "",
+      "value": "",
+      "type": "\"hidden\" | \"auto\" | \"visible\"",
+      "description": "Controls input styles when focused. If auto the input is hidden when not focused. If visible the input will always remain visible. 'visible' by default",
+      "required": false,
+      "description_zh": "在聚焦时控制输入样式。如果为 auto，则在未聚焦时隐藏输入。如果可见，则输入将始终保持可见。默认为 'visible'"
+    }
+  },
+  "link": "https://mantine.dev/core/pills-input/?t=props",
+  "link_zh": "https://mantine.dev/core/pills-input/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PillsInputField"
+}

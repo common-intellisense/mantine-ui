@@ -1,0 +1,12 @@
+{
+  "name": "Menu.Divider",
+  "props": {},
+  "link": "https://mantine.dev/core/menu/?t=props",
+  "link_zh": "https://mantine.dev/core/menu/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "MenuDivider"
+}

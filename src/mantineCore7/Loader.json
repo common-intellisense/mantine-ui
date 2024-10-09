@@ -1,0 +1,53 @@
+{
+  "name": "Loader",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Overrides default loader with given content",
+      "required": false,
+      "description_zh": "使用给定内容覆盖默认加载器"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color, default value is theme.primaryColor",
+      "required": false,
+      "description_zh": "theme.colors 的 Key 或任何有效的 CSS 颜色，默认值为 theme.primaryColor"
+    },
+    "loaders": {
+      "default": "",
+      "value": "",
+      "type": "Partial<Record<(string & {}) | \"bars\" | \"dots\" | \"oval\", MantineLoaderComponent>>",
+      "description": "Object of loaders components, can be customized via default props or inline. Default value contains bars, oval and dots",
+      "required": false,
+      "description_zh": "Object of loaders 组件，可以通过默认 props 或内联进行自定义。默认值包含条形、椭圆和点"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number | MantineSize | (string & {})",
+      "description": "Controls width and height of the loader. Loader has predefined xs-xl values. Numbers are converted to rem. Default value is 'md'",
+      "required": false,
+      "description_zh": "控制加载器的宽度和高度。Loader 具有预定义的 xs-xl 值。数字转换为 rem。默认值为 'md'"
+    },
+    "type": {
+      "default": "",
+      "value": "",
+      "type": "(string & {}) | \"bars\" | \"dots\" | \"oval\"",
+      "description": "Loader type, key of loaders prop, default value is 'oval'",
+      "required": false,
+      "description_zh": "Loader 类型，loaders 属性的 key，默认值为 'oval'"
+    }
+  },
+  "link": "https://mantine.dev/core/loader/?t=props",
+  "link_zh": "https://mantine.dev/core/loader/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Loader"
+}

@@ -1,0 +1,133 @@
+{
+  "name": "Table",
+  "props": {
+    "borderColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of table borders, key of theme.colors or any valid CSS color",
+      "required": false,
+      "description_zh": "表格边框的颜色、theme.colors 的键或任何有效的 CSS 颜色"
+    },
+    "captionSide": {
+      "default": "",
+      "value": "",
+      "type": "\"bottom\" | \"top\"",
+      "description": "Determines on which side Table.Caption is displayed, bottom by default",
+      "required": false,
+      "description_zh": "确定在哪一侧显示 Table.Caption，默认情况下显示在底部"
+    },
+    "data": {
+      "default": "",
+      "value": "",
+      "type": "TableData",
+      "description": "Data that should be used to generate table, ignored if children prop is set",
+      "required": false,
+      "description_zh": "应该用于生成表的数据，如果设置了 children prop 则忽略"
+    },
+    "highlightOnHover": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether table rows background should change to highlightOnHoverColor when hovered, false by default",
+      "required": false,
+      "description_zh": "确定鼠标悬停时，表格行背景是否应更改为 highlightOnHoverColor，默认情况下为 false"
+    },
+    "highlightOnHoverColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Background color of table rows when hovered, key of theme.colors or any valid CSS color",
+      "required": false,
+      "description_zh": "悬停时表格行的背景颜色、theme.colors 的键或任何有效的 CSS 颜色"
+    },
+    "horizontalSpacing": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Horizontal cells spacing, key of theme.spacing or any valid CSS value for padding, numbers are converted to rem, default value is xs",
+      "required": false,
+      "description_zh": "水平单元格间距、theme.spacing 的键或任何用于填充的 CSS 值，数字转换为 rem，默认值为 xs"
+    },
+    "layout": {
+      "default": "",
+      "value": "",
+      "type": "TableLayout",
+      "description": "Value of table-layout style, auto by default",
+      "required": false,
+      "description_zh": "表格布局样式的值，默认为 auto"
+    },
+    "stickyHeader": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether Table.Thead should be sticky, false by default",
+      "required": false,
+      "description_zh": "确定 Table.Thead 是否默认应为 sticky、false"
+    },
+    "stickyHeaderOffset": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Offset from top at which Table.Thead should become sticky, 0 by default",
+      "required": false,
+      "description_zh": "Table.Thead 应变为粘滞的 Top 偏移量，默认为 0"
+    },
+    "striped": {
+      "default": "",
+      "value": "",
+      "type": "boolean | \"odd\" | \"even\"",
+      "description": "Determines whether every odd/even row background should be changed to strippedColor, if set to true, then odd value will be used, false by default",
+      "required": false,
+      "description_zh": "确定是否应将每个奇数/偶数行背景更改为 strippedColor，如果设置为 true，则使用奇数值，默认为 false"
+    },
+    "stripedColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Background color of striped rows, key of theme.colors or any valid CSS color",
+      "required": false,
+      "description_zh": "条纹行的背景颜色、theme.colors 的键或任何有效的 CSS 颜色"
+    },
+    "verticalSpacing": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Vertical cells spacing, key of theme.spacing or any valid CSS value for padding, numbers are converted to rem, default value is xs",
+      "required": false,
+      "description_zh": "垂直单元格间距、theme.spacing 的键或任何用于填充的有效 CSS 值，数字转换为 rem，默认值为 xs"
+    },
+    "withColumnBorders": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the table should have borders between columns, false by default",
+      "required": false,
+      "description_zh": "确定表是否应在列之间具有边框，默认情况下为 false"
+    },
+    "withRowBorders": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the table should have borders between rows, true by default",
+      "required": false,
+      "description_zh": "确定表是否应在行之间具有边框，默认情况下为 true"
+    },
+    "withTableBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the table should have outer border, false by default",
+      "required": false,
+      "description_zh": "确定表是否应具有外边框，默认情况下为 false"
+    }
+  },
+  "link": "https://mantine.dev/core/table/?t=props",
+  "link_zh": "https://mantine.dev/core/table/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Table"
+}

@@ -1,0 +1,93 @@
+{
+  "name": "FileButton",
+  "props": {
+    "accept": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "File input accept attribute, for example, \"image/png,image/jpeg\"",
+      "required": false,
+      "description_zh": "文件输入 accept 属性，例如 “image/png，image/jpeg”"
+    },
+    "capture": {
+      "default": "",
+      "value": "",
+      "type": "boolean | \"user\" | \"environment\"",
+      "description": "Specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute.",
+      "required": false,
+      "description_zh": "指定（可选）应捕获新文件，以及应使用哪个设备来捕获由 accept 属性定义的类型的新媒体。"
+    },
+    "children *": {
+      "default": "",
+      "value": "",
+      "type": "(props: { onClick: () => void; }) => ReactNode",
+      "description": "Function that receives button props and returns react node that should be rendered",
+      "required": false,
+      "description_zh": "接收按钮 props 并返回应该渲染的 react 节点的函数"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Disables file picker",
+      "required": false,
+      "description_zh": "禁用文件选取器"
+    },
+    "form": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Input form attribute",
+      "required": false,
+      "description_zh": "输入表单属性"
+    },
+    "inputProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"input\">",
+      "description": "Passes down props to the input element used to capture files",
+      "required": false,
+      "description_zh": "将 props 向下传递给用于捕获文件的 input 元素"
+    },
+    "multiple": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether user can pick more than one file",
+      "required": false,
+      "description_zh": "确定用户是否可以选取多个文件"
+    },
+    "name": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Input name attribute",
+      "required": false,
+      "description_zh": "Input name （输入名称） 属性"
+    },
+    "onChange *": {
+      "default": "",
+      "value": "",
+      "type": "(payload: Multiple extends true ? File[] : File | null) => void",
+      "description": "Called when files are picked",
+      "required": false,
+      "description_zh": "选取文件时调用"
+    },
+    "resetRef": {
+      "default": "",
+      "value": "",
+      "type": "ForwardedRef<() => void>",
+      "description": "Reference of the function that should be called when value changes to null or empty array",
+      "required": false,
+      "description_zh": "当 value 变为 null 或空数组时应调用的函数的引用"
+    }
+  },
+  "link": "https://mantine.dev/core/file-button/?t=props",
+  "link_zh": "https://mantine.dev/core/file-button/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "FileButton"
+}

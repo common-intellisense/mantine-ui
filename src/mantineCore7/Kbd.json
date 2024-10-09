@@ -1,0 +1,21 @@
+{
+  "name": "Kbd",
+  "props": {
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls font-size and padding, 'sm' by default",
+      "required": false,
+      "description_zh": "控制字体大小和填充，默认为 'sm'"
+    }
+  },
+  "link": "https://mantine.dev/core/kbd/?t=props",
+  "link_zh": "https://mantine.dev/core/kbd/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Kbd"
+}

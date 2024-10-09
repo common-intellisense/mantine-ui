@@ -1,0 +1,53 @@
+{
+  "name": "Image",
+  "props": {
+    "fallbackSrc": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Image url that will be used as a fallback in case src prop is not set or image cannot be loaded",
+      "required": false,
+      "description_zh": "图像 url，如果未设置 src prop 或无法加载图像，将用作后备"
+    },
+    "fit": {
+      "default": "",
+      "value": "",
+      "type": "ObjectFit",
+      "description": "Controls object-fit style, 'cover' by default",
+      "required": false,
+      "description_zh": "控制 object-fit 样式，默认为 'cover'"
+    },
+    "onError": {
+      "default": "",
+      "value": "",
+      "type": "((event: SyntheticEvent<HTMLImageElement, Event>) => void)",
+      "description": "Called when image fails to load",
+      "required": false,
+      "description_zh": "在图像加载失败时调用"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, 0 by default",
+      "required": false,
+      "description_zh": "key，或者设置border-radius，默认为0"
+    },
+    "src": {
+      "default": "",
+      "value": "",
+      "type": "any",
+      "description": "Image url",
+      "required": false,
+      "description_zh": "图片网址"
+    }
+  },
+  "link": "https://mantine.dev/core/image/?t=props",
+  "link_zh": "https://mantine.dev/core/image/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Image"
+}

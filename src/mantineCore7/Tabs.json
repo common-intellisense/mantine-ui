@@ -1,0 +1,137 @@
+{
+  "name": "Tabs",
+  "props": {
+    "activateTabWithKeyboard": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tab should be activated with arrow key press, true by default",
+      "required": false,
+      "description_zh": "确定是否应通过按箭头键激活 Tab 键，默认情况下为 true"
+    },
+    "allowTabDeactivation": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tab can be deactivated, false by default",
+      "required": false,
+      "description_zh": "确定是否可以停用 tab，默认为 false"
+    },
+    "autoContrast": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether active item text color should depend on background-color of the indicator. If luminosity of the color prop is less than theme.luminosityThreshold, then theme.white will be used for text color, otherwise theme.black. Overrides theme.autoContrast. Only applicable when variant=\"pills\"",
+      "required": false,
+      "description_zh": "确定活动项文本颜色是否应取决于指示器的 background-color。如果 color 属性的亮度小于 theme.luminosityThreshold，则 theme.white 将用于文本颜色，否则使用 theme.black。覆盖 theme.autoContrast。仅在 variant=“pills” 时适用"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Tabs content",
+      "required": false,
+      "description_zh": "标签页内容"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Changes colors of Tabs.Tab components when variant is pills or default, does nothing for other variants",
+      "required": false,
+      "description_zh": "当 variant 为 pills 或 default 时更改 Tabs.Tab 组件的颜色，对其他变体不执行任何操作"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "string | null",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "id": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Base id, used to generate ids to connect labels with controls, generated randomly by default",
+      "required": false,
+      "description_zh": "Base id，用于生成 id 以将标签与控件连接起来，默认随机生成"
+    },
+    "inverted": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether tabs should have inverted styles, false by default",
+      "required": false,
+      "description_zh": "确定制表符是否应具有反转样式，默认情况下为 false"
+    },
+    "keepMounted": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set to false, Tabs.Panel content will be unmounted when the associated tab is not active, true by default",
+      "required": false,
+      "description_zh": "如果设置为 false，则当关联的选项卡未处于活动状态时，将卸载 Tabs.Panel 内容，默认情况下为 true"
+    },
+    "loop": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether arrow key presses should loop though items (first to last and last to first), true by default",
+      "required": false,
+      "description_zh": "确定箭头键按下是否应在项目之间循环（第一个到最后一个和最后一个到第一个），默认情况下为 true"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: string | null) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "\"horizontal\" | \"vertical\"",
+      "description": "Tabs orientation, 'horizontal' by default",
+      "required": false,
+      "description_zh": "标签页方向，默认为 '水平'"
+    },
+    "placement": {
+      "default": "",
+      "value": "",
+      "type": "\"left\" | \"right\"",
+      "description": "Tabs.List placement relative to Tabs.Panel, applicable only when orientation=\"vertical\", 'left' by default",
+      "required": false,
+      "description_zh": "Tabs.List 相对于 Tabs.Panel 的放置，仅在默认为 orientation=“vertical”， 'left' 时适用"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "theme.radius 的键或任何用于设置 border-radius 的任何有效 CSS 值，默认为 theme.defaultRadius"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string | null",
+      "description": "Value for controlled component",
+      "required": false,
+      "description_zh": "受控组件的值"
+    }
+  },
+  "link": "https://mantine.dev/core/tabs/?t=props",
+  "link_zh": "https://mantine.dev/core/tabs/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Tabs.List",
+    "Tabs.Tab",
+    "Tabs.Panel"
+  ],
+  "filename": "Tabs"
+}

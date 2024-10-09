@@ -1,0 +1,61 @@
+{
+  "name": "Skeleton",
+  "props": {
+    "animate": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether Skeleton should be animated, true by default",
+      "required": false,
+      "description_zh": "确定是否应为 Skeleton 设置动画，默认为 true"
+    },
+    "circle": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, Skeleton width and border-radius are equal to its height, false by default",
+      "required": false,
+      "description_zh": "如果设置，则 Skeleton width 和 border-radius 等于其高度，默认为 false"
+    },
+    "height": {
+      "default": "",
+      "value": "",
+      "type": "Height<string | number>",
+      "description": "Skeleton height, numbers are converted to rem, auto by default",
+      "required": false,
+      "description_zh": "骨架高度，数字默认转换为 rem、auto"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem. theme.defaultRadius by default.",
+      "required": false,
+      "description_zh": "key） 或任何用于设置 border-radius 的有效 CSS 值。默认情况下，数字会转换为 rem. theme.defaultRadius。"
+    },
+    "visible": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether Skeleton overlay should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 Skeleton overlay（骨架叠加层），默认为 true"
+    },
+    "width": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"width\"]",
+      "description": "Skeleton width, numbers are converted to rem, 100% by default, ignored when circle prop is set",
+      "required": false,
+      "description_zh": "骨架宽度，数字转换为 rem，默认为 100%，设置 circle 属性时忽略"
+    }
+  },
+  "link": "https://mantine.dev/core/skeleton/?t=props",
+  "link_zh": "https://mantine.dev/core/skeleton/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Skeleton"
+}

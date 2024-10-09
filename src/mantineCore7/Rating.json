@@ -1,0 +1,125 @@
+{
+  "name": "Rating",
+  "props": {
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any CSS color value, 'yellow' by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何 CSS 颜色值，默认为 'yellow'"
+    },
+    "count": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of controls, 5 by default",
+      "required": false,
+      "description_zh": "控件数量，默认为 5 个"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "emptySymbol": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | ((value: number) => ReactNode)",
+      "description": "Icon displayed when the symbol is empty",
+      "required": false,
+      "description_zh": "元件为空时显示的图标"
+    },
+    "fractions": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of fractions each item can be divided into, 1 by default",
+      "required": false,
+      "description_zh": "每个项目可以划分为的分数数，默认为 1"
+    },
+    "fullSymbol": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | ((value: number) => ReactNode)",
+      "description": "Icon displayed when the symbol is full",
+      "required": false,
+      "description_zh": "元件已满时显示的图标"
+    },
+    "getSymbolLabel": {
+      "default": "",
+      "value": "",
+      "type": "((index: number) => string)",
+      "description": "A function to assign aria-label of the the control at index given in the argument. If not specified, control index is used as aria-label.",
+      "required": false,
+      "description_zh": "一个函数，用于分配参数中给定的索引处控件的 aria-label。如果未指定，则 control index 用作 aria-label。"
+    },
+    "highlightSelectedOnly": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, only the selected symbol changes to full symbol when selected, false by default",
+      "required": false,
+      "description_zh": "如果设置，则只有所选元件在选中时更改为完整元件，默认情况下为 false"
+    },
+    "name": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "name attribute passed down to all inputs. By default, name is generated randomly.",
+      "required": false,
+      "description_zh": "name 属性传递给所有输入。默认情况下，name 是随机生成的。"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "onHover": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => void)",
+      "description": "Called when one of the controls is hovered",
+      "required": false,
+      "description_zh": "将鼠标悬停在其中一个控件上时调用"
+    },
+    "readOnly": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, the user cannot interact with the component, false by default",
+      "required": false,
+      "description_zh": "如果设置，则用户无法与组件交互，默认情况下为 false"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number | MantineSize | (string & {})",
+      "description": "Controls component size, 'sm' by default",
+      "required": false,
+      "description_zh": "控制组件大小，默认为 'sm'"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Value for controlled component",
+      "required": false,
+      "description_zh": "受控组件的值"
+    }
+  },
+  "link": "https://mantine.dev/core/rating/?t=props",
+  "link_zh": "https://mantine.dev/core/rating/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Rating"
+}

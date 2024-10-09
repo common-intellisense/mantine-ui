@@ -1,0 +1,109 @@
+{
+  "name": "AppShell",
+  "props": {
+    "aside": {
+      "default": "",
+      "value": "",
+      "type": "AppShellAsideConfiguration",
+      "description": "AppShell.Aside configuration, controls width, breakpoints and collapsed state. Required if you use AppShell.Aside component.",
+      "required": false,
+      "description_zh": "AppShell.Aside 配置，控制宽度、断点和折叠状态。如果使用 AppShell.Aside 组件，则是必需的。"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, Navbar, Aside, Header and Footer components be hidden",
+      "required": false,
+      "description_zh": "如果设置，则隐藏 Navbar、Aside、Header 和 Footer 组件"
+    },
+    "footer": {
+      "default": "",
+      "value": "",
+      "type": "AppShellFooterConfiguration",
+      "description": "AppShell.Footer configuration, controls height, offset and collapsed state. Required if you use AppShell.Footer component.",
+      "required": false,
+      "description_zh": "AppShell.Footer 配置，控制高度、偏移和折叠状态。如果您使用 AppShell.Footer 组件，则是必需的。"
+    },
+    "header": {
+      "default": "",
+      "value": "",
+      "type": "AppShellHeaderConfiguration",
+      "description": "AppShell.Header configuration, controls height, offset and collapsed state. Required if you use AppShell.Header component.",
+      "required": false,
+      "description_zh": "AppShell.Header 配置，控制高度、偏移量和折叠状态。如果您使用 AppShell.Header 组件，则是必需的。"
+    },
+    "layout": {
+      "default": "",
+      "value": "",
+      "type": "\"default\" | \"alt\"",
+      "description": "Determines how Navbar/Aside are arranged relative to Header/Footer, default by default",
+      "required": false,
+      "description_zh": "确定导航栏/旁栏相对于页眉/页脚的排列方式，默认为"
+    },
+    "navbar": {
+      "default": "",
+      "value": "",
+      "type": "AppShellNavbarConfiguration",
+      "description": "AppShell.Navbar configuration, controls width, breakpoints and collapsed state. Required if you use AppShell.Navbar component.",
+      "required": false,
+      "description_zh": "AppShell.Navbar 配置，控制宽度、断点和折叠状态。如果您使用 AppShell.Navbar 组件，则为必需。"
+    },
+    "offsetScrollbars": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether Header and Footer components should include styles to offset scrollbars. Based on react-remove-scroll. true by default",
+      "required": false,
+      "description_zh": "确定 Header 和 Footer 组件是否应包含用于偏移滚动条的样式。基于 react-remove-scroll。默认为 true"
+    },
+    "padding": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing | AppShellResponsiveSize",
+      "description": "Controls padding of the main section, 0 by default. Important: use padding prop instead of p.",
+      "required": false,
+      "description_zh": "控制 main 部分的填充，默认为 0。重要提示：使用 padding prop 而不是 p。"
+    },
+    "transitionDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Duration of all transitions in ms, 200 by default",
+      "required": false,
+      "description_zh": "所有过渡的持续时间（以毫秒为单位），默认为 200"
+    },
+    "transitionTimingFunction": {
+      "default": "",
+      "value": "",
+      "type": "TransitionTimingFunction",
+      "description": "Timing function of all transitions, ease by default",
+      "required": false,
+      "description_zh": "所有过渡的定时功能，默认为 ease"
+    },
+    "withBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether associated components should have a border, true by default",
+      "required": false,
+      "description_zh": "确定关联的组件是否应具有边框，默认情况下为 true"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "z-index of all associated elements, 200 by default",
+      "required": false,
+      "description_zh": "所有关联元素的 z 索引，默认为 200"
+    }
+  },
+  "link": "https://mantine.dev/core/app-shell/?t=props",
+  "link_zh": "https://mantine.dev/core/app-shell/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "AppShell"
+}

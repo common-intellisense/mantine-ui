@@ -1,0 +1,61 @@
+{
+  "name": "Group",
+  "props": {
+    "align": {
+      "default": "",
+      "value": "",
+      "type": "AlignItems",
+      "description": "Controls align-items CSS property, 'center' by default",
+      "required": false,
+      "description_zh": "控制 align-items CSS 属性，默认为 'center'"
+    },
+    "gap": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Key of theme.spacing or any valid CSS value for gap, numbers are converted to rem, 'md' by default",
+      "required": false,
+      "description_zh": "key） 或 gap 的任何有效 CSS 值，数字默认转换为 rem、'md'"
+    },
+    "grow": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether each child element should have flex-grow: 1 style, false by default",
+      "required": false,
+      "description_zh": "确定每个子元素是否应具有 flex-grow： 1 样式，默认为 false"
+    },
+    "justify": {
+      "default": "",
+      "value": "",
+      "type": "JustifyContent",
+      "description": "Controls justify-content CSS property, 'flex-start' by default",
+      "required": false,
+      "description_zh": "控制 justify-content CSS 属性，默认为 'flex-start'"
+    },
+    "preventGrowOverflow": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether children should take only dedicated amount of space (max-width style is set based on the number of children), true by default",
+      "required": false,
+      "description_zh": "确定子项是否应仅占用专用空间量（根据子项的数量设置 max-width 样式），默认情况下为 true"
+    },
+    "wrap": {
+      "default": "",
+      "value": "",
+      "type": "FlexWrap",
+      "description": "Controls flex-wrap CSS property, 'wrap' by default",
+      "required": false,
+      "description_zh": "控制 flex-wrap CSS 属性，默认为 'wrap'"
+    }
+  },
+  "link": "https://mantine.dev/core/group/?t=props",
+  "link_zh": "https://mantine.dev/core/group/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Group"
+}

@@ -1,0 +1,168 @@
+{
+  "name": "Checkbox.Group",
+  "props": {
+    "children *": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Checkbox components and any other elements",
+      "required": false,
+      "description_zh": "复选框组件和任何其他元素"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "string[]",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "description": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Description component. If not set, description is not rendered.",
+      "required": false,
+      "description_zh": "Input.Description 组件的内容。如果未设置，则不会呈现 description。"
+    },
+    "descriptionProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Description component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Description 组件的 props"
+    },
+    "error": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Error component. If not set, error is not rendered.",
+      "required": false,
+      "description_zh": "Input.Error 组件的内容。如果未设置，则不会呈现 error。"
+    },
+    "errorProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Error component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Error 组件的 props"
+    },
+    "id": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Static id used as base to generate aria- attributes, by default generates random id",
+      "required": false,
+      "description_zh": "静态 id 用作生成 aria- 属性的基础，默认情况下生成随机 id"
+    },
+    "inputContainer": {
+      "default": "",
+      "value": "",
+      "type": "((children: ReactNode) => ReactNode)",
+      "description": "Input container component, React.Fragment by default",
+      "required": false,
+      "description_zh": "输入容器组件，默认为 React.Fragment"
+    },
+    "inputWrapperOrder": {
+      "default": "",
+      "value": "",
+      "type": "(\"input\" | \"label\" | \"description\" | \"error\")[]",
+      "description": "Controls order of the elements, ['label', 'description', 'input', 'error'] by default",
+      "required": false,
+      "description_zh": "默认控制元素的顺序 ['label'， 'description'， 'input'， 'error']"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Label component. If not set, label is not rendered.",
+      "required": false,
+      "description_zh": "Input.Label 组件的内容。如果未设置，则不会渲染 label。"
+    },
+    "labelElement": {
+      "default": "",
+      "value": "",
+      "type": "\"div\" | \"label\"",
+      "description": "Input.Label root element, 'label' by default",
+      "required": false,
+      "description_zh": "Input.Label 根元素，默认为 'label'"
+    },
+    "labelProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Label component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Label 组件的 Props"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: string[]) => void)",
+      "description": "Called with an array of selected checkboxes values when value changes",
+      "required": false,
+      "description_zh": "当值更改时，使用所选复选框值的数组调用"
+    },
+    "readOnly": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, value cannot be changed",
+      "required": false,
+      "description_zh": "如果设置，则无法更改 value"
+    },
+    "required": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Adds required attribute to the input and a red asterisk on the right side of label, false by default",
+      "required": false,
+      "description_zh": "将 required 属性添加到输入中，并在 label 的右侧添加红色星号，默认为 false"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls size of the Input.Wrapper, 'sm' by default",
+      "required": false,
+      "description_zh": "控制 Input.Wrapper 的大小，默认为 'sm'"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string[]",
+      "description": "Controlled component value",
+      "required": false,
+      "description_zh": "受控组件值"
+    },
+    "withAsterisk": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the required asterisk should be displayed. Overrides required prop. Does not add required attribute to the input. false by default",
+      "required": false,
+      "description_zh": "确定是否应显示所需的星号。Overrides required 属性。不向输入添加 required 属性。false 默认"
+    },
+    "wrapperProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the root element (Input.Wrapper component)",
+      "required": false,
+      "description_zh": "向下传递到根元素的 props（Input.Wrapper 组件）"
+    }
+  },
+  "link": "https://mantine.dev/core/checkbox/?t=props",
+  "link_zh": "https://mantine.dev/core/checkbox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Checkbox",
+    "Checkbox.Indicator"
+  ],
+  "filename": "CheckboxGroup"
+}

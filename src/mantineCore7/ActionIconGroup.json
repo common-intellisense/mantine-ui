@@ -1,0 +1,39 @@
+{
+  "name": "ActionIcon.Group",
+  "props": {
+    "borderWidth": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "border-width of the child ActionIcon components. Default value in 1",
+      "required": false,
+      "description_zh": "border-width 的子 ActionIcon 组件。默认值为 1"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "ActionIcon components only",
+      "required": false,
+      "description_zh": "仅限 ActionIcon 组件"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "\"horizontal\" | \"vertical\"",
+      "description": "Controls group orientation, 'horizontal' by default",
+      "required": false,
+      "description_zh": "控制组方向，默认为 '水平'"
+    }
+  },
+  "link": "https://mantine.dev/core/action-icon/?t=props",
+  "link_zh": "https://mantine.dev/core/action-icon/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "ActionIcon"
+  ],
+  "filename": "ActionIconGroup"
+}

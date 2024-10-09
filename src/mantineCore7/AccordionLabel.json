@@ -1,0 +1,12 @@
+{
+  "name": "Accordion.Label",
+  "props": {},
+  "link": "https://mantine.dev/core/accordion/?t=props",
+  "link_zh": "https://mantine.dev/core/accordion/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "AccordionLabel"
+}

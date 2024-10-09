@@ -1,0 +1,61 @@
+{
+  "name": "Menu.Item",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Item label",
+      "required": false,
+      "description_zh": "项标签"
+    },
+    "closeMenuOnClick": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the menu should be closed when the item is clicked, overrides closeOnItemClick prop on the Menu component",
+      "required": false,
+      "description_zh": "确定在单击项时是否应关闭菜单，并覆盖 Menu 组件上的 closeOnItemClick 属性"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 颜色"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Disables item",
+      "required": false,
+      "description_zh": "禁用项"
+    },
+    "leftSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Section displayed on the left side of the label",
+      "required": false,
+      "description_zh": "标签左侧显示的部分"
+    },
+    "rightSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Section displayed on the right side of the label",
+      "required": false,
+      "description_zh": "标签右侧显示的部分"
+    }
+  },
+  "link": "https://mantine.dev/core/menu/?t=props",
+  "link_zh": "https://mantine.dev/core/menu/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "MenuItem"
+}

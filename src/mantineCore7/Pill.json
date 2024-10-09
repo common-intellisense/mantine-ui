@@ -1,0 +1,61 @@
+{
+  "name": "Pill",
+  "props": {
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If pill is disabled it has higher contrast to be visible on the disabled input background and the remove button is hidden",
+      "required": false,
+      "description_zh": "如果禁用 pill，则它在禁用的输入背景上具有更高的可见对比度，并且 remove 按钮处于隐藏状态"
+    },
+    "onRemove": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when the remove button is clicked",
+      "required": false,
+      "description_zh": "单击删除按钮时调用"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem. 'xl' by default.",
+      "required": false,
+      "description_zh": "key） 或任何用于设置 border-radius 的有效 CSS 值。默认情况下，数字转换为 rem. 'xl'。"
+    },
+    "removeButtonProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"button\">",
+      "description": "Props passed down to the remove button",
+      "required": false,
+      "description_zh": "传递给 remove 按钮的 props"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize",
+      "description": "Controls pill font-size and padding, 'sm' by default",
+      "required": false,
+      "description_zh": "控制 pill font-size 和 padding，默认为 'sm'"
+    },
+    "withRemoveButton": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the remove button should be displayed, false by default",
+      "required": false,
+      "description_zh": "确定是否应显示删除按钮，默认为 false"
+    }
+  },
+  "link": "https://mantine.dev/core/pill/?t=props",
+  "link_zh": "https://mantine.dev/core/pill/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Pill"
+}

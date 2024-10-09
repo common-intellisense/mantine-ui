@@ -1,0 +1,53 @@
+{
+  "name": "Collapse",
+  "props": {
+    "animateOpacity": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether opacity should be animated, true by default",
+      "required": false,
+      "description_zh": "确定是否应为不透明度设置动画，默认情况下为 true"
+    },
+    "in *": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Opened state",
+      "required": false,
+      "description_zh": "打开状态"
+    },
+    "onTransitionEnd": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called each time transition ends",
+      "required": false,
+      "description_zh": "每次转换结束时调用"
+    },
+    "transitionDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Transition duration in ms, 200 by default",
+      "required": false,
+      "description_zh": "过渡持续时间（以毫秒为单位），默认为 200"
+    },
+    "transitionTimingFunction": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Transition timing function, default value is ease",
+      "required": false,
+      "description_zh": "过渡定时功能，默认值为 ease"
+    }
+  },
+  "link": "https://mantine.dev/core/collapse/?t=props",
+  "link_zh": "https://mantine.dev/core/collapse/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Collapse"
+}

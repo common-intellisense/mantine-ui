@@ -1,0 +1,229 @@
+{
+  "name": "Drawer",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Drawer content",
+      "required": false,
+      "description_zh": "抽屉内容"
+    },
+    "closeButtonProps": {
+      "default": "",
+      "value": "",
+      "type": "ModalBaseCloseButtonProps",
+      "description": "Props passed down to the close button",
+      "required": false,
+      "description_zh": "传递到 close 按钮的 props"
+    },
+    "closeOnClickOutside": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the modal/drawer should be closed when user clicks on the overlay, true by default",
+      "required": false,
+      "description_zh": "确定当用户单击叠加层时是否应关闭模态框/抽屉，默认为 true"
+    },
+    "closeOnEscape": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether onClose should be called when user presses the escape key, true by default",
+      "required": false,
+      "description_zh": "确定当用户按下 Esc 键时是否应调用 onClose，默认情况下为 true"
+    },
+    "id": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Id used to connect modal/drawer with body and title",
+      "required": false,
+      "description_zh": "用于将 modal/drawer 与 body 和 title 连接的 ID"
+    },
+    "keepMounted": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set modal/drawer will not be unmounted from the DOM when it is hidden, display: none styles will be added instead, false by default",
+      "required": false,
+      "description_zh": "如果 set modal/drawer 在隐藏时不会从 DOM 中卸载，则会添加 display： none 样式，默认为 false"
+    },
+    "lockScroll": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether scroll should be locked when opened={true}, true by default",
+      "required": false,
+      "description_zh": "确定 scroll 是否应在 opened={true} 时锁定，默认情况下为 true"
+    },
+    "offset": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Drawer container offset from the viewport end, 0 by default",
+      "required": false,
+      "description_zh": "抽屉容器与视区端的偏移量，默认为 0"
+    },
+    "onClose *": {
+      "default": "",
+      "value": "",
+      "type": "() => void",
+      "description": "Called when modal/drawer is closed",
+      "required": false,
+      "description_zh": "在 modal/drawer 关闭时调用"
+    },
+    "opened *": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether modal/drawer is opened",
+      "required": false,
+      "description_zh": "确定是否打开 modal/drawer"
+    },
+    "overlayProps": {
+      "default": "",
+      "value": "",
+      "type": "ModalBaseOverlayProps",
+      "description": "Props passed down to the Overlay component, can be used to configure opacity, background-color, styles and other properties",
+      "required": false,
+      "description_zh": "传递给 Overlay 组件的 props 可用于配置 opacity、background-color、styles 和其他属性"
+    },
+    "padding": {
+      "default": "",
+      "value": "",
+      "type": "MantineSpacing",
+      "description": "Key of theme.spacing or any valid CSS value to set content, header and footer padding, 'md' by default",
+      "required": false,
+      "description_zh": "theme.spacing 的键或任何有效的 CSS 值来设置内容、页眉和页脚填充，默认为 'md'"
+    },
+    "portalProps": {
+      "default": "",
+      "value": "",
+      "type": "Omit<PortalProps, \"children\">",
+      "description": "Props passed down to the Portal component when withinPortal is set",
+      "required": false,
+      "description_zh": "设置 withinPortal 时向下传递到 Portal 组件的 props"
+    },
+    "position": {
+      "default": "",
+      "value": "",
+      "type": "DrawerPosition",
+      "description": "Side of the screen on which drawer will be opened, 'left' by default",
+      "required": false,
+      "description_zh": "将打开抽屉的屏幕一侧，默认为 “left”"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, 0 by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，0"
+    },
+    "removeScrollProps": {
+      "default": "",
+      "value": "",
+      "type": "RemoveScrollProps",
+      "description": "Props passed down to react-remove-scroll, can be used to customize scroll lock behavior",
+      "required": false,
+      "description_zh": "传递给 react-remove-scroll 的 props 可用于自定义滚动锁定行为"
+    },
+    "returnFocus": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether focus should be returned to the last active element when onClose is called, true by default",
+      "required": false,
+      "description_zh": "确定在调用 onClose 时是否应将焦点返回到最后一个活动元素，默认情况下为 true"
+    },
+    "scrollAreaComponent": {
+      "default": "",
+      "value": "",
+      "type": "ScrollAreaComponent",
+      "description": "Scroll area component, native div element by default",
+      "required": false,
+      "description_zh": "滚动区域组件，默认为原生 div 元素"
+    },
+    "shadow": {
+      "default": "",
+      "value": "",
+      "type": "MantineShadow",
+      "description": "Key of theme.shadows or any valid CSS box-shadow value, 'xl' by default",
+      "required": false,
+      "description_zh": "theme.shadows 的键或任何有效的 CSS box-shadow 值，默认为 'xl'"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number | MantineSize | (string & {})",
+      "description": "Controls width of the content area, 'md' by default",
+      "required": false,
+      "description_zh": "控制内容区域的宽度，默认为 'md'"
+    },
+    "title": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Drawer title",
+      "required": false,
+      "description_zh": "抽屉标题"
+    },
+    "transitionProps": {
+      "default": "",
+      "value": "",
+      "type": "TransitionProps",
+      "description": "Props added to the Transition component that used to animate overlay and body, use to configure duration and animation type, { duration: 200, transition: 'pop' } by default",
+      "required": false,
+      "description_zh": "添加到 Transition 组件中的道具，用于对叠加层和 body 进行动画处理，用于配置持续时间和动画类型，默认为 { duration： 200， transition： 'pop' }"
+    },
+    "trapFocus": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether focus should be trapped, true by default",
+      "required": false,
+      "description_zh": "确定是否应捕获焦点，默认为 true"
+    },
+    "withCloseButton": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the close button should be rendered, true by default",
+      "required": false,
+      "description_zh": "确定是否应呈现关闭按钮，默认为 true"
+    },
+    "withOverlay": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the overlay should be rendered, true by default",
+      "required": false,
+      "description_zh": "确定是否应渲染叠加层，默认为 true"
+    },
+    "withinPortal": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the component should be rendered inside Portal, true by default",
+      "required": false,
+      "description_zh": "确定是否应在 Portal 中渲染组件，默认为 true"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "z-index CSS property of the root element, 200 by default",
+      "required": false,
+      "description_zh": "z-index CSS 属性，默认为 200"
+    }
+  },
+  "link": "https://mantine.dev/core/drawer/?t=props",
+  "link_zh": "https://mantine.dev/core/drawer/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Drawer"
+}

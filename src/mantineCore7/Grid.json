@@ -1,0 +1,77 @@
+{
+  "name": "Grid",
+  "props": {
+    "align": {
+      "default": "",
+      "value": "",
+      "type": "AlignItems",
+      "description": "Sets align-items, stretch by default",
+      "required": false,
+      "description_zh": "默认情况下设置 align-items、stretch"
+    },
+    "breakpoints": {
+      "default": "",
+      "value": "",
+      "type": "GridBreakpoints",
+      "description": "Breakpoints values, only applicable when type=\"container\" is set, ignored when type is not set or type=\"media\" is set.",
+      "required": false,
+      "description_zh": "断点值，仅在设置了 type=“container” 时适用，在未设置 type 或设置了 type=“media” 时忽略。"
+    },
+    "columns": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of columns in each row, 12 by default",
+      "required": false,
+      "description_zh": "每行中的列数，默认为 12"
+    },
+    "grow": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether columns in the last row should expand to fill all available space, false by default",
+      "required": false,
+      "description_zh": "确定最后一行中的列是否应扩展以填充所有可用空间，默认情况下为 false"
+    },
+    "gutter": {
+      "default": "",
+      "value": "",
+      "type": "StyleProp<MantineSpacing>",
+      "description": "Gutter between columns, key of theme.spacing or any valid CSS value, 'md' by default",
+      "required": false,
+      "description_zh": "列之间的装订线，theme.spacing 的键或任何有效的 CSS 值，默认为 'md'"
+    },
+    "justify": {
+      "default": "",
+      "value": "",
+      "type": "JustifyContent",
+      "description": "Sets justify-content, flex-start by default",
+      "required": false,
+      "description_zh": "默认情况下设置 justify-content、flex-start"
+    },
+    "overflow": {
+      "default": "",
+      "value": "",
+      "type": "Overflow",
+      "description": "Sets overflow CSS property on the root element, 'visible' by default",
+      "required": false,
+      "description_zh": "在根元素上设置 overflow CSS 属性，默认为 'visible'"
+    },
+    "type": {
+      "default": "",
+      "value": "",
+      "type": "\"media\" | \"container\"",
+      "description": "Determines typeof of queries that are used for responsive styles, 'media' by default",
+      "required": false,
+      "description_zh": "确定用于响应式样式的查询类型，默认为 'media'"
+    }
+  },
+  "link": "https://mantine.dev/core/grid/?t=props",
+  "link_zh": "https://mantine.dev/core/grid/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Grid"
+}

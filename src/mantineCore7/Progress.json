@@ -1,0 +1,77 @@
+{
+  "name": "Progress",
+  "props": {
+    "animated": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the sections stripes should be animated, if set, striped prop is ignored, false by default",
+      "required": false,
+      "description_zh": "确定是否应该对 sections stripes 进行动画处理，如果设置，则忽略 striped prop，默认为 false"
+    },
+    "autoContrast": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether label text color should depend on background-color. If luminosity of the color prop is less than theme.luminosityThreshold, then theme.white will be used for text color, otherwise theme.black. Overrides theme.autoContrast.",
+      "required": false,
+      "description_zh": "确定标签文本颜色是否应取决于 background-color。如果 color 属性的亮度小于 theme.luminosityThreshold，则 theme.white 将用于文本颜色，否则使用 theme.black。覆盖 theme.autoContrast。"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS value, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 值，默认为 theme.primaryColor"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "theme.radius 的键或任何用于设置 border-radius 的任何有效 CSS 值，默认为 theme.defaultRadius"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number | MantineSize | (string & {})",
+      "description": "Controls track height, 'md' by default",
+      "required": false,
+      "description_zh": "控制轨道高度，默认为 'md'"
+    },
+    "striped": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the section should have stripes, false by default",
+      "required": false,
+      "description_zh": "确定该部分是否应具有条带，默认情况下为 false"
+    },
+    "transitionDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls sections width transition duration, value is specified in ms, 100 by default",
+      "required": false,
+      "description_zh": "控制部分宽度过渡持续时间，值以毫秒为单位指定，默认为 100"
+    },
+    "value *": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Value of the progress",
+      "required": false,
+      "description_zh": "进步的价值"
+    }
+  },
+  "link": "https://mantine.dev/core/progress/?t=props",
+  "link_zh": "https://mantine.dev/core/progress/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Progress"
+}

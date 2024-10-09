@@ -1,0 +1,45 @@
+{
+  "name": "HoverCard.Target",
+  "props": {
+    "children *": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Target element",
+      "required": false,
+      "description_zh": "Target 元素"
+    },
+    "eventPropsWrapperName": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the prop that is used to pass event listeners, by default event listeners are passed directly to component",
+      "required": false,
+      "description_zh": "prop 的 Key 用于传递事件监听器，默认情况下，事件监听器直接传递给组件"
+    },
+    "popupType": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Popup accessible type, 'dialog' by default",
+      "required": false,
+      "description_zh": "弹出窗口辅助类型，默认为 'dialog'"
+    },
+    "refProp": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the prop that should be used to access element ref",
+      "required": false,
+      "description_zh": "应该用于访问元素 ref 的 prop 的键"
+    }
+  },
+  "link": "https://mantine.dev/core/hover-card/?t=props",
+  "link_zh": "https://mantine.dev/core/hover-card/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "HoverCardTarget"
+}

@@ -1,0 +1,133 @@
+{
+  "name": "Stepper.Step",
+  "props": {
+    "allowStepClick": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Set to false to disable clicks on step",
+      "required": false,
+      "description_zh": "设置为 false 以禁用步骤上的单击"
+    },
+    "allowStepSelect": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Should step selection be allowed",
+      "required": false,
+      "description_zh": "是否允许选择步骤"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors, by default controlled by Stepper component",
+      "required": false,
+      "description_zh": "theme.colors 的 key，默认由 Stepper 组件控制"
+    },
+    "completedIcon": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | StepFragmentComponent",
+      "description": "Step icon displayed when step is completed",
+      "required": false,
+      "description_zh": "步骤完成时显示的步骤图标"
+    },
+    "description": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | StepFragmentComponent",
+      "description": "Step description",
+      "required": false,
+      "description_zh": "步骤描述"
+    },
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | StepFragmentComponent",
+      "description": "Step icon, defaults to step index + 1 when rendered within Stepper",
+      "required": false,
+      "description_zh": "Step 图标，在 Stepper 中渲染时默认为步骤索引 + 1"
+    },
+    "iconPosition": {
+      "default": "",
+      "value": "",
+      "type": "\"left\" | \"right\"",
+      "description": "Icon position relative to step body, controlled by Stepper component",
+      "required": false,
+      "description_zh": "图标相对于步骤主体的位置，由 Stepper 组件控制"
+    },
+    "iconSize": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Icon wrapper size",
+      "required": false,
+      "description_zh": "图标包装器大小"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | StepFragmentComponent",
+      "description": "Step label, render after icon",
+      "required": false,
+      "description_zh": "步骤标签，在图标后渲染"
+    },
+    "loading": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Indicates loading state of the step",
+      "required": false,
+      "description_zh": "指示步骤的加载状态"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "\"horizontal\" | \"vertical\"",
+      "description": "Component orientation",
+      "required": false,
+      "description_zh": "组件方向"
+    },
+    "progressIcon": {
+      "default": "",
+      "value": "",
+      "type": "ReactNode | StepFragmentComponent",
+      "description": "Step icon displayed when step is in progress",
+      "required": false,
+      "description_zh": "步骤正在进行时显示的步骤图标"
+    },
+    "state": {
+      "default": "",
+      "value": "",
+      "type": "\"stepInactive\" | \"stepProgress\" | \"stepCompleted\"",
+      "description": "Step state, controlled by Stepper component",
+      "required": false,
+      "description_zh": "Step 状态，由 Stepper 组件控制"
+    },
+    "step": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Step index, controlled by Stepper component *",
+      "required": false,
+      "description_zh": "步长索引，由 Stepper 分量控制 *"
+    },
+    "withIcon": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the icon should be displayed",
+      "required": false,
+      "description_zh": "确定是否应显示图标"
+    }
+  },
+  "link": "https://mantine.dev/core/stepper/?t=props",
+  "link_zh": "https://mantine.dev/core/stepper/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "StepperStep"
+}

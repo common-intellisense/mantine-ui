@@ -1,0 +1,85 @@
+{
+  "name": "Checkbox.Indicator",
+  "props": {
+    "autoContrast": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether icon color with filled variant should depend on background-color. If luminosity of the color prop is less than theme.luminosityThreshold, then theme.white will be used for text color, otherwise theme.black. Overrides theme.autoContrast.",
+      "required": false,
+      "description_zh": "确定具有 filled 变体的图标颜色是否应取决于 background-color。如果 color 属性的亮度小于 theme.luminosityThreshold，则 theme.white 将用于文本颜色，否则使用 theme.black。覆盖 theme.autoContrast。"
+    },
+    "checked": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the component should have checked styles",
+      "required": false,
+      "description_zh": "确定组件是否应具有 checked 样式"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color to set input background color in checked state, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "将输入背景颜色设置为选中状态的 theme.colors 的键或任何有效的 CSS 颜色，默认为 theme.primaryColor"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the component should have disabled styles",
+      "required": false,
+      "description_zh": "确定组件是否应禁用样式"
+    },
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "FC<{ indeterminate: boolean; className: string; }> | undefined",
+      "description": "Icon displayed when checkbox is in checked or indeterminate state",
+      "required": false,
+      "description_zh": "复选框处于选中状态或不确定状态时显示的图标"
+    },
+    "iconColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color to set icon color, by default value depends on theme.autoContrast",
+      "required": false,
+      "description_zh": "key的 theme.colors 或任何有效的 CSS 颜色来设置图标颜色，默认值取决于 theme.autoContrast"
+    },
+    "indeterminate": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Indeterminate state of the checkbox. If set, checked prop is ignored.",
+      "required": false,
+      "description_zh": "复选框的 Indeterminate 状态。如果设置，则忽略 checked prop。"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "theme.radius 的键或任何用于设置 border-radius 的任何有效 CSS 值，默认为 theme.defaultRadius"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls size of the component, 'sm' by default",
+      "required": false,
+      "description_zh": "控制组件的大小，默认为 'sm'"
+    }
+  },
+  "link": "https://mantine.dev/core/checkbox/?t=props",
+  "link_zh": "https://mantine.dev/core/checkbox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "CheckboxIndicator"
+}

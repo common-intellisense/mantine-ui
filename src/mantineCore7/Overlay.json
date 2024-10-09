@@ -1,0 +1,85 @@
+{
+  "name": "Overlay",
+  "props": {
+    "backgroundOpacity": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls overlay background-color opacity 0–1, disregarded when gradient prop is set, 0.6 by default",
+      "required": false,
+      "description_zh": "控制叠加背景色不透明度 0–1，设置 gradient prop 时忽略，默认为 0.6"
+    },
+    "blur": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Overlay background blur, 0 by default",
+      "required": false,
+      "description_zh": "叠加背景模糊，默认为 0"
+    },
+    "center": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether content inside overlay should be vertically and horizontally centered, false by default",
+      "required": false,
+      "description_zh": "确定叠加层内的内容是否应垂直和水平居中，默认为 false"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content inside overlay",
+      "required": false,
+      "description_zh": "叠加层内的内容"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "BackgroundColor",
+      "description": "Overlay background-color, #000 by default",
+      "required": false,
+      "description_zh": "叠加 background-color，默认为 #000"
+    },
+    "fixed": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether overlay should have fixed position instead of absolute, false by default",
+      "required": false,
+      "description_zh": "确定叠加层是否应具有固定位置而不是 absolute，默认情况下为 false"
+    },
+    "gradient": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Changes overlay to gradient. If set, color prop is ignored",
+      "required": false,
+      "description_zh": "将叠加更改为渐变。如果设置，则忽略 color 属性"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, 0 by default",
+      "required": false,
+      "description_zh": "key，或者设置border-radius，默认为0"
+    },
+    "zIndex": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Overlay z-index, 200 by default",
+      "required": false,
+      "description_zh": "叠加 z-index，默认为 200"
+    }
+  },
+  "link": "https://mantine.dev/core/overlay/?t=props",
+  "link_zh": "https://mantine.dev/core/overlay/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Overlay"
+}

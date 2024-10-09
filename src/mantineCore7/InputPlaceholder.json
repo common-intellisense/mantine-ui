@@ -1,0 +1,12 @@
+{
+  "name": "Input.Placeholder",
+  "props": {},
+  "link": "https://mantine.dev/core/input/?t=props",
+  "link_zh": "https://mantine.dev/core/input/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "InputPlaceholder"
+}

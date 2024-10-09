@@ -1,0 +1,21 @@
+{
+  "name": "Pagination.Dots",
+  "props": {
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "FC<PaginationIconProps>",
+      "description": "Custom dots icon component, must accept svg element props and size prop",
+      "required": false,
+      "description_zh": "自定义点图标组件，必须接受 svg element props 和 size prop"
+    }
+  },
+  "link": "https://mantine.dev/core/pagination/?t=props",
+  "link_zh": "https://mantine.dev/core/pagination/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PaginationDots"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Chip.Group",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Chip components and any other elements",
+      "required": false,
+      "description_zh": "芯片组件和任何其他元素"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "string | string[] | null",
+      "description": "Uncontrolled component initial value",
+      "required": false,
+      "description_zh": "不受控的零部件初始值"
+    },
+    "multiple": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether it is allowed to select multiple values, false by default",
+      "required": false,
+      "description_zh": "确定是否允许选择多个值，默认为 false"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: T extends true ? string[] : string) => void)",
+      "description": "Called when value changes. If multiple prop is set, called with an array of selected values. If not, called with a string value of selected chip.",
+      "required": false,
+      "description_zh": "当值更改时调用。如果设置了 multiple prop，则使用所选值的数组调用。如果不是，则使用 selected chip 的字符串值调用。"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "string | string[] | null",
+      "description": "Controlled component value",
+      "required": false,
+      "description_zh": "受控组件值"
+    }
+  },
+  "link": "https://mantine.dev/core/chip/?t=props",
+  "link_zh": "https://mantine.dev/core/chip/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Chip"
+  ],
+  "filename": "ChipGroup"
+}

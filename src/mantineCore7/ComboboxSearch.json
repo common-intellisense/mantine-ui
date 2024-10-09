@@ -1,0 +1,12 @@
+{
+  "name": "Combobox.Search",
+  "props": {},
+  "link": "https://mantine.dev/core/combobox/?t=props",
+  "link_zh": "https://mantine.dev/core/combobox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ComboboxSearch"
+}

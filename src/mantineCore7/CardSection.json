@@ -1,0 +1,29 @@
+{
+  "name": "Card.Section",
+  "props": {
+    "inheritPadding": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the section should inherit padding from the parent Card, false by default",
+      "required": false,
+      "description_zh": "确定该部分是否应从父 Card 继承内边距，默认为 false"
+    },
+    "withBorder": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the section should have a border, false by default",
+      "required": false,
+      "description_zh": "确定部分是否应具有边框，默认情况下为 false"
+    }
+  },
+  "link": "https://mantine.dev/core/card/?t=props",
+  "link_zh": "https://mantine.dev/core/card/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "CardSection"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Combobox.Dropdown",
+  "props": {
+    "hidden": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the dropdown should be hidden, for example, when there are no options to display",
+      "required": false,
+      "description_zh": "确定是否应隐藏下拉列表，例如，当没有要显示的选项时"
+    }
+  },
+  "link": "https://mantine.dev/core/combobox/?t=props",
+  "link_zh": "https://mantine.dev/core/combobox/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "Combobox.Options",
+    "Combobox.Search"
+  ],
+  "filename": "ComboboxDropdown"
+}

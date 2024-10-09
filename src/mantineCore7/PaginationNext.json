@@ -1,0 +1,21 @@
+{
+  "name": "Pagination.Next",
+  "props": {
+    "icon": {
+      "default": "",
+      "value": "",
+      "type": "FC<PaginationIconProps>",
+      "description": "An icon component to replace the default icon",
+      "required": false,
+      "description_zh": "用于替换默认图标的图标组件"
+    }
+  },
+  "link": "https://mantine.dev/core/pagination/?t=props",
+  "link_zh": "https://mantine.dev/core/pagination/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PaginationNext"
+}

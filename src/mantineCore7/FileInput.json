@@ -1,0 +1,333 @@
+{
+  "name": "FileInput",
+  "props": {
+    "accept": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "File input accept attribute, for example, \"image/png,image/jpeg\"",
+      "required": false,
+      "description_zh": "文件输入 accept 属性，例如 “image/png，image/jpeg”"
+    },
+    "capture": {
+      "default": "",
+      "value": "",
+      "type": "boolean | \"user\" | \"environment\"",
+      "description": "Specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute.",
+      "required": false,
+      "description_zh": "指定（可选）应捕获新文件，以及应使用哪个设备来捕获由 accept 属性定义的类型的新媒体。"
+    },
+    "clearButtonProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"button\">",
+      "description": "Props passed down to the clear button",
+      "required": false,
+      "description_zh": "传递到 clear 按钮的 props"
+    },
+    "clearable": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether clear button should be displayed in the right section, false by default",
+      "required": false,
+      "description_zh": "确定是否应在右侧部分显示清除按钮，默认为 false"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "File | File[] | null",
+      "description": "Uncontrolled component default value",
+      "required": false,
+      "description_zh": "非受控零部件默认值"
+    },
+    "description": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Description component. If not set, description is not rendered.",
+      "required": false,
+      "description_zh": "Input.Description 组件的内容。如果未设置，则不会呈现 description。"
+    },
+    "descriptionProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Description component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Description 组件的 props"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Sets disabled attribute on the input element",
+      "required": false,
+      "description_zh": "在 input 元素上设置 disabled 属性"
+    },
+    "error": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Error component. If not set, error is not rendered.",
+      "required": false,
+      "description_zh": "Input.Error 组件的内容。如果未设置，则不会呈现 error。"
+    },
+    "errorProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Error component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Error 组件的 props"
+    },
+    "fileInputProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"input\">",
+      "description": "Props passed down to the hidden input element which is used to capture files",
+      "required": false,
+      "description_zh": "向下传递到隐藏的 input 元素的 props，用于捕获文件"
+    },
+    "form": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Input form attribute",
+      "required": false,
+      "description_zh": "输入表单属性"
+    },
+    "inputContainer": {
+      "default": "",
+      "value": "",
+      "type": "((children: ReactNode) => ReactNode)",
+      "description": "Input container component, React.Fragment by default",
+      "required": false,
+      "description_zh": "输入容器组件，默认为 React.Fragment"
+    },
+    "inputSize": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "size prop added to the input element",
+      "required": false,
+      "description_zh": "size 属性添加到 input 元素"
+    },
+    "inputWrapperOrder": {
+      "default": "",
+      "value": "",
+      "type": "(\"input\" | \"label\" | \"description\" | \"error\")[]",
+      "description": "Controls order of the elements, ['label', 'description', 'input', 'error'] by default",
+      "required": false,
+      "description_zh": "默认控制元素的顺序 ['label'， 'description'， 'input'， 'error']"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Label component. If not set, label is not rendered.",
+      "required": false,
+      "description_zh": "Input.Label 组件的内容。如果未设置，则不会渲染 label。"
+    },
+    "labelProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Label component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Label 组件的 Props"
+    },
+    "leftSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content section rendered on the left side of the input",
+      "required": false,
+      "description_zh": "在输入的左侧呈现的内容部分"
+    },
+    "leftSectionPointerEvents": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"pointerEvents\"]",
+      "description": "Sets pointer-events styles on the leftSection element, 'none' by default",
+      "required": false,
+      "description_zh": "在 leftSection 元素上设置 pointer-events 样式，默认为 'none'"
+    },
+    "leftSectionProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"div\">",
+      "description": "Props passed down to the leftSection element",
+      "required": false,
+      "description_zh": "向下传递到 leftSection 元素的 props"
+    },
+    "leftSectionWidth": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"width\"]",
+      "description": "Left section width, used to set width of the section and input padding-left, by default equals to the input height",
+      "required": false,
+      "description_zh": "Left section width，用于设置部分的宽度和输入 padding-left，默认情况下等于输入高度"
+    },
+    "multiple": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether user can pick more than one file, false by default",
+      "required": false,
+      "description_zh": "确定用户是否可以选取多个文件，默认为 false"
+    },
+    "name": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Input name attribute",
+      "required": false,
+      "description_zh": "Input name （输入名称） 属性"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((payload: Multiple extends true ? File[] : File | null) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "placeholder": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Input placeholder",
+      "required": false,
+      "description_zh": "输入占位符"
+    },
+    "pointer": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the input should have cursor: pointer style, false by default",
+      "required": false,
+      "description_zh": "确定输入是否应具有 cursor： pointer style，默认为 false"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，theme.defaultRadius"
+    },
+    "readOnly": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "If set, the input value cannot be changed",
+      "required": false,
+      "description_zh": "如果设置，则无法更改输入值"
+    },
+    "required": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Adds required attribute to the input and a red asterisk on the right side of label, false by default",
+      "required": false,
+      "description_zh": "将 required 属性添加到输入中，并在 label 的右侧添加红色星号，默认为 false"
+    },
+    "resetRef": {
+      "default": "",
+      "value": "",
+      "type": "ForwardedRef<() => void>",
+      "description": "Reference of the function that should be called when value changes to null or empty array",
+      "required": false,
+      "description_zh": "当 value 变为 null 或空数组时应调用的函数的引用"
+    },
+    "rightSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content section rendered on the right side of the input",
+      "required": false,
+      "description_zh": "内容部分呈现在输入的右侧"
+    },
+    "rightSectionPointerEvents": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"pointerEvents\"]",
+      "description": "Sets pointer-events styles on the rightSection element, 'none' by default",
+      "required": false,
+      "description_zh": "在 rightSection 元素上设置 pointer-events 样式，默认为 'none'"
+    },
+    "rightSectionProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"div\">",
+      "description": "Props passed down to the rightSection element",
+      "required": false,
+      "description_zh": "向下传递到 rightSection 元素的 Props"
+    },
+    "rightSectionWidth": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"width\"]",
+      "description": "Right section width, used to set width of the section and input padding-right, by default equals to the input height",
+      "required": false,
+      "description_zh": "Right section width，用于设置截面宽度和输入 padding-right，默认情况下等于输入高度"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize | (string & {})",
+      "description": "Controls input height and horizontal padding, 'sm' by default",
+      "required": false,
+      "description_zh": "控制输入高度和水平填充，默认为 'sm'"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "File | File[] | null",
+      "description": "Controlled component value",
+      "required": false,
+      "description_zh": "受控组件值"
+    },
+    "valueComponent": {
+      "default": "",
+      "value": "",
+      "type": "FC<{ value: File | File[] | null; }>",
+      "description": "Value renderer. By default, file name is displayed.",
+      "required": false,
+      "description_zh": "Value 渲染器。默认情况下，将显示文件名。"
+    },
+    "withAsterisk": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the required asterisk should be displayed. Overrides required prop. Does not add required attribute to the input. false by default",
+      "required": false,
+      "description_zh": "确定是否应显示所需的星号。Overrides required 属性。不向输入添加 required 属性。false 默认"
+    },
+    "withErrorStyles": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the input should have red border and red text color when the error prop is set, true by default",
+      "required": false,
+      "description_zh": "确定设置 error 属性时，input 是否应具有红色边框和红色文本颜色，默认为 true"
+    },
+    "wrapperProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the root element",
+      "required": false,
+      "description_zh": "向下传递到根元素的 props"
+    }
+  },
+  "link": "https://mantine.dev/core/file-input/?t=props",
+  "link_zh": "https://mantine.dev/core/file-input/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "FileInput"
+}
