@@ -52,7 +52,7 @@
     "position": {
       "default": "",
       "value": "",
-      "type": "\"bottom-end\" | \"bottom-start\" | \"top-end\" | \"top-start\" | \"bottom-center\" | \"top-center\" | \"middle-center\" | \"middle-end\" | \"middle-start\"",
+      "type": "bottom-end / bottom-start / top-end / top-start / bottom-center / top-center / middle-center / middle-end / middle-start",
       "description": "Indicator position relative to the target element, 'top-end' by default",
       "required": false,
       "description_zh": "指示器相对于目标元素的位置，默认为 'top-end'"

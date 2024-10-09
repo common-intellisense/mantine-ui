@@ -60,7 +60,7 @@
     "thousandsGroupStyle": {
       "default": "",
       "value": "",
-      "type": "\"none\" | \"thousand\" | \"lakh\" | \"wan\"",
+      "type": "none / thousand / lakh / wan",
       "description": "Defines the thousand grouping style",
       "required": false,
       "description_zh": "定义千位分组样式"

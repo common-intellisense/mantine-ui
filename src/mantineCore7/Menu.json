@@ -268,7 +268,7 @@
     "trigger": {
       "default": "",
       "value": "",
-      "type": "\"hover\" | \"click\" | \"click-hover\"",
+      "type": "hover / click / click-hover",
       "description": "Event which should open menu",
       "required": false,
       "description_zh": "应打开菜单的事件"

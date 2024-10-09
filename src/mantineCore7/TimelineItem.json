@@ -28,7 +28,7 @@
     "lineVariant": {
       "default": "",
       "value": "",
-      "type": "\"dashed\" | \"dotted\" | \"solid\"",
+      "type": "dashed / dotted / solid",
       "description": "Controls line border style, 'solid' by default",
       "required": false,
       "description_zh": "控制线条边框样式，默认为 'solid'"

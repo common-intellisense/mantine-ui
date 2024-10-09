@@ -20,7 +20,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Orientation of the group, horizontal by default",
       "required": false,
       "description_zh": "组的方向，默认为水平"

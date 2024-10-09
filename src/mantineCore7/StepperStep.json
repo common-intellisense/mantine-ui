@@ -52,7 +52,7 @@
     "iconPosition": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Icon position relative to step body, controlled by Stepper component",
       "required": false,
       "description_zh": "图标相对于步骤主体的位置，由 Stepper 组件控制"
@@ -84,7 +84,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Component orientation",
       "required": false,
       "description_zh": "组件方向"
@@ -100,7 +100,7 @@
     "state": {
       "default": "",
       "value": "",
-      "type": "\"stepInactive\" | \"stepProgress\" | \"stepCompleted\"",
+      "type": "stepInactive / stepProgress / stepCompleted",
       "description": "Step state, controlled by Stepper component",
       "required": false,
       "description_zh": "Step 状态，由 Stepper 组件控制"

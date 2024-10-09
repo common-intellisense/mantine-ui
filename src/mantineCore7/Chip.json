@@ -92,7 +92,7 @@
     "type": {
       "default": "",
       "value": "",
-      "type": "\"checkbox\" | \"radio\"",
+      "type": "checkbox / radio",
       "description": "Chip input type, 'checkbox' by default",
       "required": false,
       "description_zh": "芯片输入类型，默认为 'checkbox'"

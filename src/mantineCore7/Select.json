@@ -12,7 +12,7 @@
     "checkIconPosition": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Position of the check icon relative to the option label, 'left' by default",
       "required": false,
       "description_zh": "检查图标相对于选项标签的位置，默认为 'left'"

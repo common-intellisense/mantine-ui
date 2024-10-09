@@ -20,7 +20,7 @@
     "labelPosition": {
       "default": "",
       "value": "",
-      "type": "\"center\" | \"left\" | \"right\"",
+      "type": "center / left / right",
       "description": "Controls label position, 'center' by default",
       "required": false,
       "description_zh": "控制标签位置，默认为 'center'"
@@ -28,7 +28,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Controls orientation, 'horizontal' by default",
       "required": false,
       "description_zh": "控制方向，默认为 'horizontal'"

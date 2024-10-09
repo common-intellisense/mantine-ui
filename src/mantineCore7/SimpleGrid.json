@@ -20,7 +20,7 @@
     "type": {
       "default": "",
       "value": "",
-      "type": "\"media\" | \"container\"",
+      "type": "media / container",
       "description": "Determines typeof of queries that are used for responsive styles, 'media' by default",
       "required": false,
       "description_zh": "确定用于响应式样式的查询类型，默认为 'media'"

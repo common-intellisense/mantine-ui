@@ -68,7 +68,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Determines in which orientation component id displayed, 'horizontal' by default",
       "required": false,
       "description_zh": "确定显示哪个方向组件 ID，默认为 'horizontal'"

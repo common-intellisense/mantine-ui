@@ -4,7 +4,7 @@
     "labelElement": {
       "default": "",
       "value": "",
-      "type": "\"div\" | \"label\"",
+      "type": "div / label",
       "description": "Root element of the label, 'label' by default",
       "required": false,
       "description_zh": "标签的根元素，默认为 'label'"

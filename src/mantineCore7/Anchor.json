@@ -60,7 +60,7 @@
     "underline": {
       "default": "",
       "value": "",
-      "type": "\"always\" | \"hover\" | \"never\"",
+      "type": "always / hover / never",
       "description": "Determines in which cases link should have text-decoration: underline styles, hover by default",
       "required": false,
       "description_zh": "确定在哪些情况下链接应具有文本装饰：下划线样式，默认悬停"

@@ -84,7 +84,7 @@
     "labelElement": {
       "default": "",
       "value": "",
-      "type": "\"div\" | \"label\"",
+      "type": "div / label",
       "description": "Input.Label root element, 'label' by default",
       "required": false,
       "description_zh": "Input.Label 根元素，默认为 'label'"

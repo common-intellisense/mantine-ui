@@ -36,7 +36,7 @@
     "clampBehavior": {
       "default": "",
       "value": "",
-      "type": "\"none\" | \"blur\" | \"strict\"",
+      "type": "none / blur / strict",
       "description": "Controls how value is clamped, strict – user is not allowed to enter values that are not in [min, max] range, blur – user is allowed to enter any values, but the value is clamped when the input loses focus (default behavior), none – lifts all restrictions, [min, max] range is applied only for controls and up/down keys",
       "required": false,
       "description_zh": "控制值的钳制方式，严格 – 不允许用户输入不在 [min， max] 范围内的值，模糊 – 允许用户输入任何值，但当输入失去焦点时该值被钳制（默认行为），none – 解除所有限制，[min， max] 范围仅适用于控件和上/下键"
@@ -364,7 +364,7 @@
     "thousandsGroupStyle": {
       "default": "",
       "value": "",
-      "type": "\"none\" | \"thousand\" | \"lakh\" | \"wan\"",
+      "type": "none / thousand / lakh / wan",
       "description": "Defines the thousand grouping style.",
       "required": false,
       "description_zh": "定义千位分组样式。"
@@ -380,7 +380,7 @@
     "type": {
       "default": "",
       "value": "",
-      "type": "\"text\" | \"tel\" | \"password\"",
+      "type": "text / tel / password",
       "description": "Controls input type attribute, 'text' by default",
       "required": false,
       "description_zh": "控制输入类型属性，默认为 'text'"

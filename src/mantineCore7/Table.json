@@ -12,7 +12,7 @@
     "captionSide": {
       "default": "",
       "value": "",
-      "type": "\"bottom\" | \"top\"",
+      "type": "bottom / top",
       "description": "Determines on which side Table.Caption is displayed, bottom by default",
       "required": false,
       "description_zh": "确定在哪一侧显示 Table.Caption，默认情况下显示在底部"

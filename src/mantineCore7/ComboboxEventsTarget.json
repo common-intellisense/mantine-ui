@@ -28,7 +28,7 @@
     "targetType": {
       "default": "",
       "value": "",
-      "type": "\"button\" | \"input\"",
+      "type": "button / input",
       "description": "Determines which events should be handled by the target element.\nbutton target type handles Space and Enter keys to toggle dropdown opened state.\ninput by default.",
       "required": false,
       "description_zh": "确定目标元素应处理哪些事件。\n按钮目标类型处理 Space 和 Enter 键以切换下拉列表打开状态。\ninput 的 intent 值。"

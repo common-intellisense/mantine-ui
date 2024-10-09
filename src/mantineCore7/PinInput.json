@@ -84,7 +84,7 @@
     "inputMode": {
       "default": "",
       "value": "",
-      "type": "\"search\" | \"text\" | \"none\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\"",
+      "type": "search / text / none / tel / url / email / numeric / decimal",
       "description": "inputmode attribute, inferred from the type prop if not specified",
       "required": false,
       "description_zh": "inputMode 属性，如果未指定，则从 type 属性推断"

@@ -68,7 +68,7 @@
     "iconPosition": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Icon position relative to the step body, 'left' by default",
       "required": false,
       "description_zh": "图标相对于步骤主体的位置，默认为 'left'"
@@ -92,7 +92,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Stepper orientation, 'horizontal' by default",
       "required": false,
       "description_zh": "步进器方向，默认为 “水平”"

@@ -36,7 +36,7 @@
     "layout": {
       "default": "",
       "value": "",
-      "type": "\"default\" | \"alt\"",
+      "type": "default / alt",
       "description": "Determines how Navbar/Aside are arranged relative to Header/Footer, default by default",
       "required": false,
       "description_zh": "确定导航栏/旁栏相对于页眉/页脚的排列方式，默认为"

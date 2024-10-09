@@ -60,7 +60,7 @@
     "labelPosition": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Position of the label relative to the input, 'right' by default",
       "required": false,
       "description_zh": "标签相对于输入的位置，默认为 'right'"

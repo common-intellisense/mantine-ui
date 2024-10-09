@@ -12,7 +12,7 @@
     "align": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Controls how the content is positioned relative to the bullet, 'left' by default",
       "required": false,
       "description_zh": "控制内容相对于项目符号的位置，默认为 'left'"

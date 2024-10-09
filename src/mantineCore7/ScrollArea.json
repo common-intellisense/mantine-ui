@@ -60,7 +60,7 @@
     "type": {
       "default": "",
       "value": "",
-      "type": "\"auto\" | \"scroll\" | \"always\" | \"hover\" | \"never\"",
+      "type": "auto / scroll / always / hover / never",
       "description": "Defines scrollbars behavior, hover by default\n- hover – scrollbars are visible when mouse is over the scroll area\n- scroll – scrollbars are visible when the scroll area is scrolled\n- always – scrollbars are always visible\n- never – scrollbars are always hidden\n- auto – similar to overflow: auto – scrollbars are always visible when the content is overflowing",
       "required": false,
       "description_zh": "定义滚动条行为，默认悬停\n- hover – 当鼠标位于滚动区域上时，滚动条可见\n- scroll – 滚动区域滚动时滚动条可见\n- always – 滚动条始终可见\n- never – 滚动条始终处于隐藏状态\n- auto – 类似于 overflow： auto – 当内容溢出时，滚动条始终可见"

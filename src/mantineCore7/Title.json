@@ -28,7 +28,7 @@
     "textWrap": {
       "default": "",
       "value": "",
-      "type": "\"wrap\" | \"nowrap\" | \"balance\" | \"pretty\" | \"stable\"",
+      "type": "wrap / nowrap / balance / pretty / stable",
       "description": "Controls text-wrap property, 'wrap' by default",
       "required": false,
       "description_zh": "控制 text-wrap 属性，默认为 'wrap'"

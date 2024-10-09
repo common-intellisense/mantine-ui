@@ -92,7 +92,7 @@
     "orientation": {
       "default": "",
       "value": "",
-      "type": "\"horizontal\" | \"vertical\"",
+      "type": "horizontal / vertical",
       "description": "Tabs orientation, 'horizontal' by default",
       "required": false,
       "description_zh": "标签页方向，默认为 '水平'"
@@ -100,7 +100,7 @@
     "placement": {
       "default": "",
       "value": "",
-      "type": "\"left\" | \"right\"",
+      "type": "left / right",
       "description": "Tabs.List placement relative to Tabs.Panel, applicable only when orientation=\"vertical\", 'left' by default",
       "required": false,
       "description_zh": "Tabs.List 相对于 Tabs.Panel 的放置，仅在默认为 orientation=“vertical”， 'left' 时适用"

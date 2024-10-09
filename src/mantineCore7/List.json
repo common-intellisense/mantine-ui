@@ -52,7 +52,7 @@
     "type": {
       "default": "",
       "value": "",
-      "type": "\"ordered\" | \"unordered\"",
+      "type": "ordered / unordered",
       "description": "List type: ol or ul, 'unordered' by default",
       "required": false,
       "description_zh": "列表类型：ol 或 ul，默认为 'unordered'"
