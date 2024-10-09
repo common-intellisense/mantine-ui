@@ -113,14 +113,6 @@
       "required": false,
       "description_zh": "控件的 height 和 min-width，默认为 'md'"
     },
-    "total *": {
-      "default": "",
-      "value": "",
-      "type": "number",
-      "description": "Total number of pages, must be an integer",
-      "required": false,
-      "description_zh": "总页数，必须为整数"
-    },
     "value": {
       "default": "",
       "value": "",
@@ -128,6 +120,14 @@
       "description": "Active page for controlled component, must be an integer in [0, total] interval",
       "required": false,
       "description_zh": "受控组件的活动页，必须是 [0， total] 间隔内的整数"
+    },
+    "total": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Total number of pages, must be an integer",
+      "required": true,
+      "description_zh": "总页数，必须为整数"
     }
   },
   "link": "https://mantine.dev/core/pagination/?t=props",

@@ -9,14 +9,6 @@
       "required": false,
       "description_zh": "确定是否应将焦点困在子元素中"
     },
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "any",
-      "description": "Element at which focus should be trapped, should support ref prop",
-      "required": false,
-      "description_zh": "应该捕获焦点的元素，应该支持 ref prop"
-    },
     "innerRef": {
       "default": "",
       "value": "",
@@ -32,6 +24,14 @@
       "description": "Prop that should be used to access component ref",
       "required": false,
       "description_zh": "应该用于访问组件 ref 的 prop"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "any",
+      "description": "Element at which focus should be trapped, should support ref prop",
+      "required": true,
+      "description_zh": "应该捕获焦点的元素，应该支持 ref prop"
     }
   },
   "link": "https://mantine.dev/core/focus-trap/?t=props",

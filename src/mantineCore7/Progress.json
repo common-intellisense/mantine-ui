@@ -57,12 +57,12 @@
       "required": false,
       "description_zh": "控制部分宽度过渡持续时间，值以毫秒为单位指定，默认为 100"
     },
-    "value *": {
+    "value": {
       "default": "",
       "value": "",
       "type": "number",
       "description": "Value of the progress",
-      "required": false,
+      "required": true,
       "description_zh": "进步的价值"
     }
   },

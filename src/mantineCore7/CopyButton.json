@@ -1,14 +1,6 @@
 {
   "name": "CopyButton",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "(payload: { copied: boolean; copy: () => void; }) => ReactNode",
-      "description": "Children callback, provides current status and copy function as an argument",
-      "required": false,
-      "description_zh": "Children 回调，提供 current status 和 copy 函数作为参数"
-    },
     "timeout": {
       "default": "",
       "value": "",
@@ -17,12 +9,20 @@
       "required": false,
       "description_zh": "复制状态超时（以毫秒为单位），默认为 1000"
     },
-    "value *": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "(payload: { copied: boolean; copy: () => void; }) => ReactNode",
+      "description": "Children callback, provides current status and copy function as an argument",
+      "required": true,
+      "description_zh": "Children 回调，提供 current status 和 copy 函数作为参数"
+    },
+    "value": {
       "default": "",
       "value": "",
       "type": "string",
       "description": "Value that will be copied to the clipboard when the button is clicked",
-      "required": false,
+      "required": true,
       "description_zh": "单击按钮时将复制到剪贴板的值"
     }
   },

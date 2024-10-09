@@ -17,14 +17,6 @@
       "required": false,
       "description_zh": "确定当用户在树外部单击时是否应清除选择，默认情况下为 false"
     },
-    "data *": {
-      "default": "",
-      "value": "",
-      "type": "TreeNodeData[]",
-      "description": "Data used to render nodes",
-      "required": false,
-      "description_zh": "用于渲染节点的数据"
-    },
     "expandOnClick": {
       "default": "",
       "value": "",
@@ -72,6 +64,14 @@
       "description": "Use-tree hook instance that can be used to manipulate component state",
       "required": false,
       "description_zh": "可用于操作组件状态的 use-tree 钩子实例"
+    },
+    "data": {
+      "default": "",
+      "value": "",
+      "type": "TreeNodeData[]",
+      "description": "Data used to render nodes",
+      "required": true,
+      "description_zh": "用于渲染节点的数据"
     }
   },
   "link": "https://mantine.dev/core/tree/?t=props",

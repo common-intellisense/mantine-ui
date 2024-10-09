@@ -1,14 +1,6 @@
 {
   "name": "Radio.Group",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Radio components and any other elements",
-      "required": false,
-      "description_zh": "无线电组件和任何其他元件"
-    },
     "defaultValue": {
       "default": "",
       "value": "",
@@ -160,6 +152,14 @@
       "description": "Props passed down to the Input.Wrapper",
       "required": false,
       "description_zh": "向下传递到 Input.Wrapper 的 props"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Radio components and any other elements",
+      "required": true,
+      "description_zh": "无线电组件和任何其他元件"
     }
   },
   "link": "https://mantine.dev/core/radio/?t=props",

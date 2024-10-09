@@ -25,14 +25,6 @@
       "required": false,
       "description_zh": "单击关闭按钮时调用"
     },
-    "opened *": {
-      "default": "",
-      "value": "",
-      "type": "boolean",
-      "description": "Opened state",
-      "required": false,
-      "description_zh": "打开状态"
-    },
     "portalProps": {
       "default": "",
       "value": "",
@@ -112,6 +104,14 @@
       "description": "Root element z-index property, 200 by default",
       "required": false,
       "description_zh": "根元素 z-index 属性，默认为 200"
+    },
+    "opened": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Opened state",
+      "required": true,
+      "description_zh": "打开状态"
     }
   },
   "link": "https://mantine.dev/core/dialog/?t=props",

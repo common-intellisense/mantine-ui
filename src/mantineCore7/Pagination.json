@@ -177,14 +177,6 @@
       "required": false,
       "description_zh": "控件的 height 和 min-width，默认为 'md'"
     },
-    "total *": {
-      "default": "",
-      "value": "",
-      "type": "number",
-      "description": "Total number of pages, must be an integer",
-      "required": false,
-      "description_zh": "总页数，必须为整数"
-    },
     "value": {
       "default": "",
       "value": "",
@@ -208,6 +200,14 @@
       "description": "Determines whether first/last controls should be rendered, false by default",
       "required": false,
       "description_zh": "确定是否应呈现第一个/最后一个控件，默认为 false"
+    },
+    "total": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Total number of pages, must be an integer",
+      "required": true,
+      "description_zh": "总页数，必须为整数"
     }
   },
   "link": "https://mantine.dev/core/pagination/?t=props",

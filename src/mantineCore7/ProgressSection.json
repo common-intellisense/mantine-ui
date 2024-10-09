@@ -25,14 +25,6 @@
       "required": false,
       "description_zh": "确定该部分是否应具有条带，默认情况下为 false"
     },
-    "value *": {
-      "default": "",
-      "value": "",
-      "type": "number",
-      "description": "Value of the section in 0–100 range",
-      "required": false,
-      "description_zh": "截面值在 0-100 范围内"
-    },
     "withAria": {
       "default": "",
       "value": "",
@@ -40,6 +32,14 @@
       "description": "Determines whether aria-* props should be added to the root element, true by default",
       "required": false,
       "description_zh": "确定是否应将 aria-* props 添加到根元素中，默认为 true"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Value of the section in 0–100 range",
+      "required": true,
+      "description_zh": "截面值在 0-100 范围内"
     }
   },
   "link": "https://mantine.dev/core/progress/?t=props",

@@ -73,12 +73,12 @@
       "required": false,
       "description_zh": "填充截面样式的过渡持续时间更改（以毫秒为单位），默认为 0"
     },
-    "value *": {
+    "value": {
       "default": "",
       "value": "",
       "type": "number",
       "description": "Progress value from 0 to 100",
-      "required": false,
+      "required": true,
       "description_zh": "进度值从 0 到 100"
     }
   },

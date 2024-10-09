@@ -1,12 +1,12 @@
 {
   "name": "Checkbox.Group",
   "props": {
-    "children *": {
+    "children": {
       "default": "",
       "value": "",
       "type": "React.ReactNode",
       "description": "Checkbox components and any other elements",
-      "required": false,
+      "required": true,
       "description_zh": "复选框组件和任何其他元素"
     },
     "defaultValue": {

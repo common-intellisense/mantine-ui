@@ -1,14 +1,6 @@
 {
   "name": "Transition",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "(styles: CSSProperties) => Element",
-      "description": "Render function with transition styles argument",
-      "required": false,
-      "description_zh": "带有过渡样式参数的 render 函数"
-    },
     "duration": {
       "default": "",
       "value": "",
@@ -48,14 +40,6 @@
       "description": "If set element will not be unmounted from the DOM when it is hidden, display: none styles will be applied instead",
       "required": false,
       "description_zh": "如果 set 元素在隐藏时不会从 DOM 中卸载，则将应用 display： none 样式"
-    },
-    "mounted *": {
-      "default": "",
-      "value": "",
-      "type": "boolean",
-      "description": "Determines whether component should be mounted to the DOM",
-      "required": false,
-      "description_zh": "确定是否应将组件挂载到 DOM"
     },
     "onEnter": {
       "default": "",
@@ -104,6 +88,22 @@
       "description": "Transition name or object",
       "required": false,
       "description_zh": "过渡名称或对象"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "(styles: CSSProperties) => Element",
+      "description": "Render function with transition styles argument",
+      "required": true,
+      "description_zh": "带有过渡样式参数的 render 函数"
+    },
+    "mounted": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether component should be mounted to the DOM",
+      "required": true,
+      "description_zh": "确定是否应将组件挂载到 DOM"
     }
   },
   "link": "https://mantine.dev/core/transition/?t=props",

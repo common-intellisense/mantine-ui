@@ -9,12 +9,12 @@
       "required": false,
       "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，0"
     },
-    "src *": {
+    "src": {
       "default": "",
       "value": "",
       "type": "string",
       "description": "Image url",
-      "required": false,
+      "required": true,
       "description_zh": "图片网址"
     }
   },

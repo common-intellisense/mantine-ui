@@ -33,14 +33,6 @@
       "required": false,
       "description_zh": "箭头大小（以 px 为单位），默认为 4"
     },
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Target element, must support ref prop and ...others",
-      "required": false,
-      "description_zh": "Target 元素，必须支持 ref prop 和 ...别人"
-    },
     "closeDelay": {
       "default": "",
       "value": "",
@@ -104,14 +96,6 @@
       "description": "If set, the tooltip will not be unmounted from the DOM when it is hidden, display: none styles will be applied instead",
       "required": false,
       "description_zh": "如果设置，则隐藏时不会从 DOM 中卸载工具提示，而是应用 display： none 样式"
-    },
-    "label *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Tooltip content",
-      "required": false,
-      "description_zh": "工具提示内容"
     },
     "multiline": {
       "default": "",
@@ -224,6 +208,22 @@
       "description": "Tooltip z-index, 300 by default",
       "required": false,
       "description_zh": "工具提示 z-index，默认为 300"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Target element, must support ref prop and ...others",
+      "required": true,
+      "description_zh": "Target 元素，必须支持 ref prop 和 ...别人"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Tooltip content",
+      "required": true,
+      "description_zh": "工具提示内容"
     }
   },
   "link": "https://mantine.dev/core/tooltip/?t=props",

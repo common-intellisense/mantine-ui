@@ -25,14 +25,6 @@
       "required": false,
       "description_zh": "设置进度圈的边缘是否圆角"
     },
-    "sections *": {
-      "default": "",
-      "value": "",
-      "type": "RingProgressSection[]",
-      "description": "Ring sections",
-      "required": false,
-      "description_zh": "环截面"
-    },
     "size": {
       "default": "",
       "value": "",
@@ -48,6 +40,14 @@
       "description": "Ring thickness",
       "required": false,
       "description_zh": "戒指厚度"
+    },
+    "sections": {
+      "default": "",
+      "value": "",
+      "type": "RingProgressSection[]",
+      "description": "Ring sections",
+      "required": true,
+      "description_zh": "环截面"
     }
   },
   "link": "https://mantine.dev/core/ring-progress/?t=props",

@@ -1,14 +1,6 @@
 {
   "name": "HoverCard.Target",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Target element",
-      "required": false,
-      "description_zh": "Target 元素"
-    },
     "eventPropsWrapperName": {
       "default": "",
       "value": "",
@@ -32,6 +24,14 @@
       "description": "Key of the prop that should be used to access element ref",
       "required": false,
       "description_zh": "应该用于访问元素 ref 的 prop 的键"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Target element",
+      "required": true,
+      "description_zh": "Target 元素"
     }
   },
   "link": "https://mantine.dev/core/hover-card/?t=props",

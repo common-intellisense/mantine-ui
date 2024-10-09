@@ -1,14 +1,6 @@
 {
   "name": "Highlight",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "string",
-      "description": "String parts of which must be highlighted",
-      "required": false,
-      "description_zh": "必须突出显示其字符串部分"
-    },
     "color": {
       "default": "",
       "value": "",
@@ -24,14 +16,6 @@
       "description": "Gradient configuration, ignored when variant is not gradient, theme.defaultGradient by default",
       "required": false,
       "description_zh": "Gradient 配置，当 variant 不是 gradient 时忽略，默认为 theme.defaultGradient"
-    },
-    "highlight *": {
-      "default": "",
-      "value": "",
-      "type": "string | string[]",
-      "description": "Substring or an array of substrings to highlight in children",
-      "required": false,
-      "description_zh": "Substring 或要在 children 中突出显示的子字符串数组"
     },
     "highlightStyles": {
       "default": "",
@@ -88,6 +72,22 @@
       "description": "Side on which Text must be truncated, if true, text is truncated from the start",
       "required": false,
       "description_zh": "必须截断文本的一侧，如果为 true，则从头开始截断文本"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "String parts of which must be highlighted",
+      "required": true,
+      "description_zh": "必须突出显示其字符串部分"
+    },
+    "highlight": {
+      "default": "",
+      "value": "",
+      "type": "string | string[]",
+      "description": "Substring or an array of substrings to highlight in children",
+      "required": true,
+      "description_zh": "Substring 或要在 children 中突出显示的子字符串数组"
     }
   },
   "link": "https://mantine.dev/core/highlight/?t=props",

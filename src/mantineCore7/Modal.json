@@ -73,22 +73,6 @@
       "required": false,
       "description_zh": "确定 scroll 是否应在 opened={true} 时锁定，默认情况下为 true"
     },
-    "onClose *": {
-      "default": "",
-      "value": "",
-      "type": "() => void",
-      "description": "Called when modal/drawer is closed",
-      "required": false,
-      "description_zh": "在 modal/drawer 关闭时调用"
-    },
-    "opened *": {
-      "default": "",
-      "value": "",
-      "type": "boolean",
-      "description": "Determines whether modal/drawer is opened",
-      "required": false,
-      "description_zh": "确定是否打开 modal/drawer"
-    },
     "overlayProps": {
       "default": "",
       "value": "",
@@ -232,6 +216,22 @@
       "description": "z-index CSS property of the root element, 200 by default",
       "required": false,
       "description_zh": "z-index CSS 属性，默认为 200"
+    },
+    "onClose": {
+      "default": "",
+      "value": "",
+      "type": "() => void",
+      "description": "Called when modal/drawer is closed",
+      "required": true,
+      "description_zh": "在 modal/drawer 关闭时调用"
+    },
+    "opened": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether modal/drawer is opened",
+      "required": true,
+      "description_zh": "确定是否打开 modal/drawer"
     }
   },
   "link": "https://mantine.dev/core/modal/?t=props",

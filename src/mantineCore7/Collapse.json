@@ -9,14 +9,6 @@
       "required": false,
       "description_zh": "确定是否应为不透明度设置动画，默认情况下为 true"
     },
-    "in *": {
-      "default": "",
-      "value": "",
-      "type": "boolean",
-      "description": "Opened state",
-      "required": false,
-      "description_zh": "打开状态"
-    },
     "onTransitionEnd": {
       "default": "",
       "value": "",
@@ -40,6 +32,14 @@
       "description": "Transition timing function, default value is ease",
       "required": false,
       "description_zh": "过渡定时功能，默认值为 ease"
+    },
+    "in": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Opened state",
+      "required": true,
+      "description_zh": "打开状态"
     }
   },
   "link": "https://mantine.dev/core/collapse/?t=props",

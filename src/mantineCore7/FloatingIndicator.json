@@ -9,22 +9,6 @@
       "required": false,
       "description_zh": "确定过渡结束后是否应显示指示器，如果在具有 transform： scale（n） 样式的容器内使用，则应设置该指示器"
     },
-    "parent *": {
-      "default": "",
-      "value": "",
-      "type": "HTMLElement | null",
-      "description": "Parent element with relative position based on which indicator position should be calculated",
-      "required": false,
-      "description_zh": "具有相对位置的父元素，该位置基于应计算指标位置"
-    },
-    "target *": {
-      "default": "",
-      "value": "",
-      "type": "HTMLElement | null",
-      "description": "Target element over which indicator should be displayed",
-      "required": false,
-      "description_zh": "应在其上显示指示器的目标元素"
-    },
     "transitionDuration": {
       "default": "",
       "value": "",
@@ -32,6 +16,22 @@
       "description": "Transition duration in ms, 150 by default",
       "required": false,
       "description_zh": "过渡持续时间（以毫秒为单位），默认为 150"
+    },
+    "parent": {
+      "default": "",
+      "value": "",
+      "type": "HTMLElement | null",
+      "description": "Parent element with relative position based on which indicator position should be calculated",
+      "required": true,
+      "description_zh": "具有相对位置的父元素，该位置基于应计算指标位置"
+    },
+    "target": {
+      "default": "",
+      "value": "",
+      "type": "HTMLElement | null",
+      "description": "Target element over which indicator should be displayed",
+      "required": true,
+      "description_zh": "应在其上显示指示器的目标元素"
     }
   },
   "link": "https://mantine.dev/core/floating-indicator/?t=props",

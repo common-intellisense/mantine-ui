@@ -25,12 +25,12 @@
       "required": false,
       "description_zh": "确定是否选中 item，这对于虚拟化组合框很有用"
     },
-    "value *": {
+    "value": {
       "default": "",
       "value": "",
       "type": "string",
       "description": "Option value",
-      "required": false,
+      "required": true,
       "description_zh": "选项值"
     }
   },

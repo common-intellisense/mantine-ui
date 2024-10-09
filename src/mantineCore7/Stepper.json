@@ -1,14 +1,6 @@
 {
   "name": "Stepper",
   "props": {
-    "active *": {
-      "default": "",
-      "value": "",
-      "type": "number",
-      "description": "Index of the active step",
-      "required": false,
-      "description_zh": "活动步骤的索引"
-    },
     "allowNextStepsSelect": {
       "default": "",
       "value": "",
@@ -24,14 +16,6 @@
       "description": "Determines whether icon color with filled variant should depend on background-color. If luminosity of the color prop is less than theme.luminosityThreshold, then theme.white will be used for text color, otherwise theme.black. Overrides theme.autoContrast.",
       "required": false,
       "description_zh": "确定具有 filled 变体的图标颜色是否应取决于 background-color。如果 color 属性的亮度小于 theme.luminosityThreshold，则 theme.white 将用于文本颜色，否则使用 theme.black。覆盖 theme.autoContrast。"
-    },
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": " components",
-      "required": false,
-      "description_zh": "组件"
     },
     "color": {
       "default": "",
@@ -128,6 +112,22 @@
       "description": "Determines whether steps should wrap to the next line if no space is available, true by default",
       "required": false,
       "description_zh": "确定在没有可用空间的情况下是否应将步骤换行到下一行，默认情况下为 true"
+    },
+    "active": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Index of the active step",
+      "required": true,
+      "description_zh": "活动步骤的索引"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": " components",
+      "required": true,
+      "description_zh": "组件"
     }
   },
   "link": "https://mantine.dev/core/stepper/?t=props",

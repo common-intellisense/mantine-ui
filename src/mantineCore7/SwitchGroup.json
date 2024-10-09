@@ -1,14 +1,6 @@
 {
   "name": "SwitchGroup",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Switch components",
-      "required": false,
-      "description_zh": "交换机组件"
-    },
     "defaultValue": {
       "default": "",
       "value": "",
@@ -152,6 +144,14 @@
       "description": "Props passed down to the Input.Wrapper",
       "required": false,
       "description_zh": "向下传递到 Input.Wrapper 的 props"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Switch components",
+      "required": true,
+      "description_zh": "交换机组件"
     }
   },
   "link": "https://mantine.dev/core/switch/?t=props",

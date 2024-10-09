@@ -1,14 +1,6 @@
 {
   "name": "Portal",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Portal children, for example, custom modal or popover",
-      "required": false,
-      "description_zh": "门户子对象，例如，自定义模式或弹出框"
-    },
     "target": {
       "default": "",
       "value": "",
@@ -16,6 +8,14 @@
       "description": "Element inside which portal should be created, by default a new div element is created and appended to the document.body",
       "required": false,
       "description_zh": "应在其中创建 portal 的元素，默认情况下，将创建一个新的 div 元素并将其附加到 document.body"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Portal children, for example, custom modal or popover",
+      "required": true,
+      "description_zh": "门户子对象，例如，自定义模式或弹出框"
     }
   },
   "link": "https://mantine.dev/core/portal/?t=props",

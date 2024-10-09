@@ -17,14 +17,6 @@
       "required": false,
       "description_zh": "受控组件的选中状态"
     },
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "label element associated with the input",
-      "required": false,
-      "description_zh": "label 元素"
-    },
     "color": {
       "default": "",
       "value": "",
@@ -104,6 +96,14 @@
       "description": "Props passed down to the root element",
       "required": false,
       "description_zh": "向下传递到根元素的 props"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "label element associated with the input",
+      "required": true,
+      "description_zh": "label 元素"
     }
   },
   "link": "https://mantine.dev/core/chip/?t=props",

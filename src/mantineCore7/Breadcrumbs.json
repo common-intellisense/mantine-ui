@@ -1,12 +1,12 @@
 {
   "name": "Breadcrumbs",
   "props": {
-    "children *": {
+    "children": {
       "default": "",
       "value": "",
       "type": "React.ReactNode",
       "description": "React nodes that should be separated with separator",
-      "required": false,
+      "required": true,
       "description_zh": "应该用 separator 分隔的 React 节点"
     },
     "separator": {

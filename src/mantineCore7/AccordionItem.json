@@ -1,12 +1,12 @@
 {
   "name": "Accordion.Item",
   "props": {
-    "value *": {
+    "value": {
       "default": "",
       "value": "",
       "type": "string",
       "description": "Value that is used to manage accordion state",
-      "required": false,
+      "required": true,
       "description_zh": "用于管理折叠式状态的值"
     }
   },

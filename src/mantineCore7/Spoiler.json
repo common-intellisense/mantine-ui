@@ -17,14 +17,6 @@
       "required": false,
       "description_zh": "受控扩展状态值"
     },
-    "hideLabel *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Label for close spoiler action",
-      "required": false,
-      "description_zh": "用于关闭扰流板动作的标签"
-    },
     "initialState": {
       "default": "",
       "value": "",
@@ -49,14 +41,6 @@
       "required": false,
       "description_zh": "当展开状态更改时调用（当用户切换剧透可见性时）"
     },
-    "showLabel *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Label for open spoiler action",
-      "required": false,
-      "description_zh": "打开扰流板动作的标签"
-    },
     "transitionDuration": {
       "default": "",
       "value": "",
@@ -64,6 +48,22 @@
       "description": "Spoiler reveal transition duration in ms, set 0 or null to turn off animation, 200 by default",
       "required": false,
       "description_zh": "剧透显示过渡持续时间（毫秒），设置 0 或 null 关闭动画，默认为 200"
+    },
+    "hideLabel": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Label for close spoiler action",
+      "required": true,
+      "description_zh": "用于关闭扰流板动作的标签"
+    },
+    "showLabel": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Label for open spoiler action",
+      "required": true,
+      "description_zh": "打开扰流板动作的标签"
     }
   },
   "link": "https://mantine.dev/core/spoiler/?t=props",

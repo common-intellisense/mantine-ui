@@ -41,12 +41,12 @@
       "required": false,
       "description_zh": "从父组件传递的 size，如果 value 不是像 number 这样的 number，则设置 data-size"
     },
-    "value *": {
+    "value": {
       "default": "",
       "value": "",
       "type": "string",
       "description": "Value of associated panel",
-      "required": false,
+      "required": true,
       "description_zh": "关联面板的值"
     }
   },

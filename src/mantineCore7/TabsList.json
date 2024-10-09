@@ -1,14 +1,6 @@
 {
   "name": "Tabs.List",
   "props": {
-    "children *": {
-      "default": "",
-      "value": "",
-      "type": "React.ReactNode",
-      "description": "Tabs.Tab components",
-      "required": false,
-      "description_zh": "Tabs.Tab 组件"
-    },
     "grow": {
       "default": "",
       "value": "",
@@ -24,6 +16,14 @@
       "description": "Tabs alignment, flex-start by default",
       "required": false,
       "description_zh": "Tab 对齐方式，默认为 flex-start"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Tabs.Tab components",
+      "required": true,
+      "description_zh": "Tabs.Tab 组件"
     }
   },
   "link": "https://mantine.dev/core/tabs/?t=props",

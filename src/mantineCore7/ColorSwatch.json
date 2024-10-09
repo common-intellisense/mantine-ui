@@ -9,14 +9,6 @@
       "required": false,
       "description_zh": "在色板中渲染的内容"
     },
-    "color *": {
-      "default": "",
-      "value": "",
-      "type": "string",
-      "description": "Color to display, not related to theme.colors – supports only CSS color values",
-      "required": false,
-      "description_zh": "要显示的颜色，与 theme.colors 无关 – 仅支持 CSS 颜色值"
-    },
     "radius": {
       "default": "",
       "value": "",
@@ -40,6 +32,14 @@
       "description": "Determines whether the swatch should have inner box-shadow, true by default",
       "required": false,
       "description_zh": "确定色板是否应具有内部 box-shadow，默认情况下为 true"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Color to display, not related to theme.colors – supports only CSS color values",
+      "required": true,
+      "description_zh": "要显示的颜色，与 theme.colors 无关 – 仅支持 CSS 颜色值"
     }
   },
   "link": "https://mantine.dev/core/color-swatch/?t=props",

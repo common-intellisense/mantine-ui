@@ -17,14 +17,6 @@
       "required": false,
       "description_zh": "theme.colors 的键或任何有效的 CSS 颜色，更改指示器的颜色，默认情况下颜色基于当前的配色方案"
     },
-    "data *": {
-      "default": "",
-      "value": "",
-      "type": "(string | SegmentedControlItem)[]",
-      "description": "Data based on which controls are rendered",
-      "required": false,
-      "description_zh": "基于呈现控件的数据"
-    },
     "defaultValue": {
       "default": "",
       "value": "",
@@ -128,6 +120,14 @@
       "description": "Determines whether there should be borders between items, true by default",
       "required": false,
       "description_zh": "确定项目之间是否应有边框，默认为 true"
+    },
+    "data": {
+      "default": "",
+      "value": "",
+      "type": "(string | SegmentedControlItem)[]",
+      "description": "Data based on which controls are rendered",
+      "required": true,
+      "description_zh": "基于呈现控件的数据"
     }
   },
   "link": "https://mantine.dev/core/segmented-control/?t=props",
