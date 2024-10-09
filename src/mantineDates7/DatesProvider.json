@@ -1,0 +1,12 @@
+{
+  "name": "DatesProvider",
+  "props": {},
+  "link": "https://mantine.dev/dates/dates-provider/",
+  "link_zh": "https://mantine.dev/dates/dates-provider/",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "DatesProvider"
+}

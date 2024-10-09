@@ -1,0 +1,693 @@
+{
+  "name": "DateInput",
+  "props": {
+    "allowDeselect": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether value can be deselected when the user clicks on the selected date in the calendar (only when clearable prop is set), defaults to true if clearable prop is set, false otherwise",
+      "required": false,
+      "description_zh": "确定当用户点击日历中的选定日期时是否可以取消选择 value（仅当设置了 clearable prop 时），如果设置了 clearable prop，则默认为 true，否则为 false"
+    },
+    "ariaLabels": {
+      "default": "",
+      "value": "",
+      "type": "CalendarAriaLabels",
+      "description": "Aria-label attributes for controls on different levels",
+      "required": false,
+      "description_zh": "不同级别控件的 Aria-label 属性"
+    },
+    "clearButtonProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"button\">",
+      "description": "Props added to clear button",
+      "required": false,
+      "description_zh": "已将 props 添加到 clear 按钮"
+    },
+    "clearable": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether input value can be cleared, adds clear button to right section, false by default",
+      "required": false,
+      "description_zh": "确定是否可以清除输入值，在右侧部分添加清除按钮，默认为 false"
+    },
+    "columnsToScroll": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of columns to scroll when user clicks next/prev buttons, defaults to numberOfColumns",
+      "required": false,
+      "description_zh": "用户单击下一个/上一个按钮时要滚动的列数，默认为 numberOfColumns"
+    },
+    "date": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Date that is displayed, used for controlled component",
+      "required": false,
+      "description_zh": "显示的日期，用于受控零部件"
+    },
+    "dateParser": {
+      "default": "",
+      "value": "",
+      "type": "((value: string) => Date | null)",
+      "description": "Parses user input to convert it to Date object",
+      "required": false,
+      "description_zh": "解析用户输入以将其转换为 Date 对象"
+    },
+    "decadeLabelFormat": {
+      "default": "",
+      "value": "",
+      "type": "string | ((startOfDecade: Date, endOfDecade: Date) => ReactNode)",
+      "description": "Dayjs label format to display decade label or a function that returns decade label based on date value, defaults to \"YYYY\"",
+      "required": false,
+      "description_zh": "dayjs 标签格式显示十年标签或根据日期值返回十年标签的函数，默认为 “YYYY”"
+    },
+    "defaultDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Initial date that is displayed, used for uncontrolled component",
+      "required": false,
+      "description_zh": "显示的初始日期，用于非受控零部件"
+    },
+    "defaultLevel": {
+      "default": "",
+      "value": "",
+      "type": "CalendarLevel",
+      "description": "Initial level displayed to the user (decade, year, month), used for uncontrolled component",
+      "required": false,
+      "description_zh": "向用户显示的初始级别（十年、年、月），用于非受控组件"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "DateValue",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "description": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Description component. If not set, description is not rendered.",
+      "required": false,
+      "description_zh": "Input.Description 组件的内容。如果未设置，则不会呈现 description。"
+    },
+    "descriptionProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Description component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Description 组件的 props"
+    },
+    "disabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Sets disabled attribute on the input element",
+      "required": false,
+      "description_zh": "在 input 元素上设置 disabled 属性"
+    },
+    "error": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Error component. If not set, error is not rendered.",
+      "required": false,
+      "description_zh": "Input.Error 组件的内容。如果未设置，则不会呈现 error。"
+    },
+    "errorProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Error component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Error 组件的 props"
+    },
+    "excludeDate": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => boolean)",
+      "description": "Callback function to determine whether the day should be disabled",
+      "required": false,
+      "description_zh": "用于确定是否应禁用该日期的回调函数"
+    },
+    "firstDayOfWeek": {
+      "default": "",
+      "value": "",
+      "type": "DayOfWeek",
+      "description": "Number 0-6, 0 – Sunday, 6 – Saturday, defaults to 1 – Monday",
+      "required": false,
+      "description_zh": "数字 0-6,0 – 星期日，6 – 星期六，默认为 1 – 星期一"
+    },
+    "fixOnBlur": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether input value should be reverted to last known valid value on blur, true by default",
+      "required": false,
+      "description_zh": "确定是否应在模糊时将输入值恢复为上一个已知的有效值，默认情况下为 true"
+    },
+    "getDayAriaLabel": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => string)",
+      "description": "Assigns aria-label to days based on date",
+      "required": false,
+      "description_zh": "根据日期将 aria-label 分配给天数"
+    },
+    "getDayProps": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => Omit<Partial<DayProps>, \"classNames\" | \"styles\" | \"vars\">)",
+      "description": "Adds props to Day component based on date",
+      "required": false,
+      "description_zh": "根据日期向 Day 组件添加 props"
+    },
+    "getMonthControlProps": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => Partial<PickerControlProps>)",
+      "description": "Adds props to month picker control based on date",
+      "required": false,
+      "description_zh": "根据日期向月份选取器控件添加 props"
+    },
+    "getYearControlProps": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => Partial<PickerControlProps>)",
+      "description": "Adds props to year picker control based on date",
+      "required": false,
+      "description_zh": "根据日期向年份选取器控件添加 props"
+    },
+    "hasNextLevel": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether next level button should be enabled, defaults to true",
+      "required": false,
+      "description_zh": "确定是否应启用下一级按钮，默认为 true"
+    },
+    "hideOutsideDates": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether outside dates should be hidden, defaults to false",
+      "required": false,
+      "description_zh": "确定是否应隐藏外部日期，默认为 false"
+    },
+    "hideWeekdays": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether weekdays row should be hidden, defaults to false",
+      "required": false,
+      "description_zh": "确定是否应隐藏 weekdays 行，默认为 false"
+    },
+    "highlightToday": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether today should be highlighted with a border, false by default",
+      "required": false,
+      "description_zh": "确定是否应使用边框 false 突出显示今天"
+    },
+    "inputContainer": {
+      "default": "",
+      "value": "",
+      "type": "((children: ReactNode) => ReactNode)",
+      "description": "Input container component, React.Fragment by default",
+      "required": false,
+      "description_zh": "输入容器组件，默认为 React.Fragment"
+    },
+    "inputSize": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "size prop added to the input element",
+      "required": false,
+      "description_zh": "size 属性添加到 input 元素"
+    },
+    "inputWrapperOrder": {
+      "default": "",
+      "value": "",
+      "type": "(\"input\" | \"label\" | \"description\" | \"error\")[]",
+      "description": "Controls order of the elements, ['label', 'description', 'input', 'error'] by default",
+      "required": false,
+      "description_zh": "默认控制元素的顺序 ['label'， 'description'， 'input'， 'error']"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Contents of Input.Label component. If not set, label is not rendered.",
+      "required": false,
+      "description_zh": "Input.Label 组件的内容。如果未设置，则不会渲染 label。"
+    },
+    "labelProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the Input.Label component",
+      "required": false,
+      "description_zh": "向下传递到 Input.Label 组件的 Props"
+    },
+    "leftSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content section rendered on the left side of the input",
+      "required": false,
+      "description_zh": "在输入的左侧呈现的内容部分"
+    },
+    "leftSectionPointerEvents": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"pointerEvents\"]",
+      "description": "Sets pointer-events styles on the leftSection element, 'none' by default",
+      "required": false,
+      "description_zh": "在 leftSection 元素上设置 pointer-events 样式，默认为 'none'"
+    },
+    "leftSectionProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"div\">",
+      "description": "Props passed down to the leftSection element",
+      "required": false,
+      "description_zh": "向下传递到 leftSection 元素的 props"
+    },
+    "leftSectionWidth": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"width\"]",
+      "description": "Left section width, used to set width of the section and input padding-left, by default equals to the input height",
+      "required": false,
+      "description_zh": "Left section width，用于设置部分的宽度和输入 padding-left，默认情况下等于输入高度"
+    },
+    "level": {
+      "default": "",
+      "value": "",
+      "type": "CalendarLevel",
+      "description": "Current level displayed to the user (decade, year, month), used for controlled component",
+      "required": false,
+      "description_zh": "向用户显示的当前级别（十年、年、月），用于受控组件"
+    },
+    "locale": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs locale, defaults to value defined in DatesProvider",
+      "required": false,
+      "description_zh": "Dayjs 区域设置，默认为 DatesProvider 中定义的值"
+    },
+    "maxDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Maximum possible date",
+      "required": false,
+      "description_zh": "最大可能日期"
+    },
+    "maxLevel": {
+      "default": "",
+      "value": "",
+      "type": "CalendarLevel",
+      "description": "Max level that user can go up to (decade, year, month), defaults to decade",
+      "required": false,
+      "description_zh": "用户可以达到的最高级别 （decade， year， month） ，默认为 decade"
+    },
+    "minDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Minimum possible date",
+      "required": false,
+      "description_zh": "最短可能日期"
+    },
+    "monthLabelFormat": {
+      "default": "",
+      "value": "",
+      "type": "string | ((month: Date) => ReactNode)",
+      "description": "Dayjs label format to display month label or a function that returns month label based on month value, defaults to \"MMMM YYYY\"",
+      "required": false,
+      "description_zh": "Dayjs 标签格式显示月份标签或根据月份值返回月份标签的函数，默认为 “MMMM YYYY”"
+    },
+    "monthsListFormat": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs format for months list",
+      "required": false,
+      "description_zh": "月份列表的 Dayjs 格式"
+    },
+    "nextDisabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether next control should be disabled, defaults to false",
+      "required": false,
+      "description_zh": "确定是否应禁用 next 控件，默认为 false"
+    },
+    "nextIcon": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Change next icon",
+      "required": false,
+      "description_zh": "Change next 图标"
+    },
+    "nextLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Arial-label for next button",
+      "required": false,
+      "description_zh": "用于下一个按钮的 Arial-label"
+    },
+    "numberOfColumns": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of columns to render next to each other",
+      "required": false,
+      "description_zh": "要紧挨着渲染的列数"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: DateValue) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "onDateChange": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when date changes",
+      "required": false,
+      "description_zh": "日期更改时调用"
+    },
+    "onLevelChange": {
+      "default": "",
+      "value": "",
+      "type": "((level: CalendarLevel) => void)",
+      "description": "Called when level changes",
+      "required": false,
+      "description_zh": "在级别更改时调用"
+    },
+    "onLevelClick": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when level button is clicked",
+      "required": false,
+      "description_zh": "单击级别按钮时调用"
+    },
+    "onNext": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when next button is clicked",
+      "required": false,
+      "description_zh": "单击“下一步”按钮时调用"
+    },
+    "onNextDecade": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when next decade button is clicked",
+      "required": false,
+      "description_zh": "单击下一个十年按钮时调用"
+    },
+    "onNextMonth": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when next month button is clicked",
+      "required": false,
+      "description_zh": "单击下个月按钮时调用"
+    },
+    "onNextYear": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when next year button is clicked",
+      "required": false,
+      "description_zh": "单击明年按钮时调用"
+    },
+    "onPrevious": {
+      "default": "",
+      "value": "",
+      "type": "(() => void)",
+      "description": "Called when previous button is clicked",
+      "required": false,
+      "description_zh": "单击上一个按钮时调用"
+    },
+    "onPreviousDecade": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when previous decade button is clicked",
+      "required": false,
+      "description_zh": "单击前十年按钮时调用"
+    },
+    "onPreviousMonth": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when previous month button is clicked",
+      "required": false,
+      "description_zh": "单击上个月按钮时调用"
+    },
+    "onPreviousYear": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when previous year button is clicked",
+      "required": false,
+      "description_zh": "单击上一年按钮时调用"
+    },
+    "pointer": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the input should have cursor: pointer style, false by default",
+      "required": false,
+      "description_zh": "确定输入是否应具有 cursor： pointer style，默认为 false"
+    },
+    "popoverProps": {
+      "default": "",
+      "value": "",
+      "type": "Partial<Omit<PopoverProps, \"children\">>",
+      "description": "Props added to Popover component",
+      "required": false,
+      "description_zh": "添加到 Popover 组件的 props"
+    },
+    "preserveTime": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether time (hours, minutes, seconds and milliseconds) should be preserved when new date is picked, true by default",
+      "required": false,
+      "description_zh": "确定在选择新日期时是否应保留时间（小时、分钟、秒和毫秒），默认情况下为 true"
+    },
+    "previousDisabled": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether previous control should be disabled, defaults to false",
+      "required": false,
+      "description_zh": "确定是否应禁用上一个控件，默认为 false"
+    },
+    "previousIcon": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Change previous icon",
+      "required": false,
+      "description_zh": "更改上一个图标"
+    },
+    "previousLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Arial-label for previous button",
+      "required": false,
+      "description_zh": "上一个按钮的 Arial-label"
+    },
+    "radius": {
+      "default": "",
+      "value": "",
+      "type": "MantineRadius | number",
+      "description": "Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem, theme.defaultRadius by default",
+      "required": false,
+      "description_zh": "key的 theme.radius 或任何有效的 CSS 值来设置 border-radius，数字默认转换为 rem，theme.defaultRadius"
+    },
+    "renderDay": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => ReactNode)",
+      "description": "Controls day value rendering",
+      "required": false,
+      "description_zh": "控制日值呈现"
+    },
+    "required": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Adds required attribute to the input and a red asterisk on the right side of label, false by default",
+      "required": false,
+      "description_zh": "将 required 属性添加到输入中，并在 label 的右侧添加红色星号，默认为 false"
+    },
+    "rightSection": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Content section rendered on the right side of the input",
+      "required": false,
+      "description_zh": "内容部分呈现在输入的右侧"
+    },
+    "rightSectionPointerEvents": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"pointerEvents\"]",
+      "description": "Sets pointer-events styles on the rightSection element, 'none' by default",
+      "required": false,
+      "description_zh": "在 rightSection 元素上设置 pointer-events 样式，默认为 'none'"
+    },
+    "rightSectionProps": {
+      "default": "",
+      "value": "",
+      "type": "React.ComponentPropsWithoutRef<\"div\">",
+      "description": "Props passed down to the rightSection element",
+      "required": false,
+      "description_zh": "向下传递到 rightSection 元素的 Props"
+    },
+    "rightSectionWidth": {
+      "default": "",
+      "value": "",
+      "type": "React.CSSProperties[\"width\"]",
+      "description": "Right section width, used to set width of the section and input padding-right, by default equals to the input height",
+      "required": false,
+      "description_zh": "Right section width，用于设置截面宽度和输入 padding-right，默认情况下等于输入高度"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize",
+      "description": "Component size",
+      "required": false,
+      "description_zh": "组件尺寸"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "DateValue",
+      "description": "Value for controlled component",
+      "required": false,
+      "description_zh": "受控组件的值"
+    },
+    "valueFormat": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs format to display input value, \"MMMM D, YYYY\" by default",
+      "required": false,
+      "description_zh": "Dayjs 格式显示输入值，默认为 “MMMM D， YYYY”"
+    },
+    "weekdayFormat": {
+      "default": "",
+      "value": "",
+      "type": "string | ((date: Date) => ReactNode)",
+      "description": "Dayjs format for weekdays names, defaults to \"dd\"",
+      "required": false,
+      "description_zh": "工作日名称的 Dayjs 格式，默认为 “dd”"
+    },
+    "weekendDays": {
+      "default": "",
+      "value": "",
+      "type": "DayOfWeek[]",
+      "description": "Indices of weekend days, 0-6, where 0 is Sunday and 6 is Saturday, defaults to value defined in DatesProvider",
+      "required": false,
+      "description_zh": "周末的索引 0-6，其中 0 是星期日，6 是星期六，默认为 DatesProvider 中定义的值"
+    },
+    "withAsterisk": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the required asterisk should be displayed. Overrides required prop. Does not add required attribute to the input. false by default",
+      "required": false,
+      "description_zh": "确定是否应显示所需的星号。Overrides required 属性。不向输入添加 required 属性。false 默认"
+    },
+    "withCellSpacing": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether controls should be separated by spacing, true by default",
+      "required": false,
+      "description_zh": "确定是否应使用空格分隔控件，默认情况下为 true"
+    },
+    "withErrorStyles": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the input should have red border and red text color when the error prop is set, true by default",
+      "required": false,
+      "description_zh": "确定设置 error 属性时，input 是否应具有红色边框和红色文本颜色，默认为 true"
+    },
+    "withNext": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether next control should be rendered, defaults to true",
+      "required": false,
+      "description_zh": "确定是否应呈现下一个控件，默认为 true"
+    },
+    "withPrevious": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether previous control should be rendered, defaults to true",
+      "required": false,
+      "description_zh": "确定是否应呈现上一个控件，默认为 true"
+    },
+    "wrapperProps": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>",
+      "description": "Props passed down to the root element",
+      "required": false,
+      "description_zh": "向下传递到根元素的 props"
+    },
+    "yearLabelFormat": {
+      "default": "",
+      "value": "",
+      "type": "string | ((year: Date) => ReactNode)",
+      "description": "Dayjs label format to display year label or a function that returns year label based on year value, defaults to \"YYYY\"",
+      "required": false,
+      "description_zh": "Dayjs 标签格式显示年份标签，或者根据年份值返回年份标签的函数，默认为 “YYYY”"
+    },
+    "yearsListFormat": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs format for years list, 'YYYY' by default",
+      "required": false,
+      "description_zh": "年份列表的 Dayjs 格式，默认为 'YYYY'"
+    }
+  },
+  "link": "https://mantine.dev/dates/date-input/?t=props",
+  "link_zh": "https://mantine.dev/dates/date-input/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "DateInput"
+}

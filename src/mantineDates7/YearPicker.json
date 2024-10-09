@@ -1,0 +1,213 @@
+{
+  "name": "YearPicker",
+  "props": {
+    "allowDeselect": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether user can deselect the date by clicking on selected item, applicable only when type=\"default\"",
+      "required": false,
+      "description_zh": "确定用户是否可以通过单击所选项目来取消选择日期，仅在 type=“default” 时适用"
+    },
+    "allowSingleDateInRange": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether single year can be selected as range, applicable only when type=\"range\"",
+      "required": false,
+      "description_zh": "确定是否可以选择单个年份作为范围，仅在 type=“range” 时适用"
+    },
+    "ariaLabels": {
+      "default": "",
+      "value": "",
+      "type": "CalendarAriaLabels",
+      "description": "Aria-label attributes for controls on different levels",
+      "required": false,
+      "description_zh": "不同级别控件的 Aria-label 属性"
+    },
+    "columnsToScroll": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of columns to scroll when user clicks next/prev buttons, defaults to numberOfColumns",
+      "required": false,
+      "description_zh": "用户单击下一个/上一个按钮时要滚动的列数，默认为 numberOfColumns"
+    },
+    "date": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Date that is displayed, used for controlled component",
+      "required": false,
+      "description_zh": "显示的日期，用于受控零部件"
+    },
+    "decadeLabelFormat": {
+      "default": "",
+      "value": "",
+      "type": "string | ((startOfDecade: Date, endOfDecade: Date) => ReactNode)",
+      "description": "Dayjs label format to display decade label or a function that returns decade label based on date value, defaults to \"YYYY\"",
+      "required": false,
+      "description_zh": "dayjs 标签格式显示十年标签或根据日期值返回十年标签的函数，默认为 “YYYY”"
+    },
+    "defaultDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Initial date that is displayed, used for uncontrolled component",
+      "required": false,
+      "description_zh": "显示的初始日期，用于非受控零部件"
+    },
+    "defaultValue": {
+      "default": "",
+      "value": "",
+      "type": "DateValue | DatesRangeValue | Date[]",
+      "description": "Default value for uncontrolled component",
+      "required": false,
+      "description_zh": "非受控零部件的默认值"
+    },
+    "getYearControlProps": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => Partial<PickerControlProps>)",
+      "description": "Adds props to year picker control based on date",
+      "required": false,
+      "description_zh": "根据日期向年份选取器控件添加 props"
+    },
+    "locale": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs locale, defaults to value defined in DatesProvider",
+      "required": false,
+      "description_zh": "Dayjs 区域设置，默认为 DatesProvider 中定义的值"
+    },
+    "maxDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Maximum possible date",
+      "required": false,
+      "description_zh": "最大可能日期"
+    },
+    "minDate": {
+      "default": "",
+      "value": "",
+      "type": "Date",
+      "description": "Minimum possible date",
+      "required": false,
+      "description_zh": "最短可能日期"
+    },
+    "nextLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Arial-label for next button",
+      "required": false,
+      "description_zh": "用于下一个按钮的 Arial-label"
+    },
+    "numberOfColumns": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Number of columns to render next to each other",
+      "required": false,
+      "description_zh": "要紧挨着渲染的列数"
+    },
+    "onChange": {
+      "default": "",
+      "value": "",
+      "type": "((value: DatePickerValue<Type>) => void)",
+      "description": "Called when value changes",
+      "required": false,
+      "description_zh": "值更改时调用"
+    },
+    "onDateChange": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when date changes",
+      "required": false,
+      "description_zh": "日期更改时调用"
+    },
+    "onNextDecade": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when next decade button is clicked",
+      "required": false,
+      "description_zh": "单击下一个十年按钮时调用"
+    },
+    "onPreviousDecade": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when previous decade button is clicked",
+      "required": false,
+      "description_zh": "单击前十年按钮时调用"
+    },
+    "onYearSelect": {
+      "default": "",
+      "value": "",
+      "type": "((date: Date) => void)",
+      "description": "Called when year is selected",
+      "required": false,
+      "description_zh": "选择年份时调用"
+    },
+    "previousLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Arial-label for previous button",
+      "required": false,
+      "description_zh": "上一个按钮的 Arial-label"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "MantineSize",
+      "description": "Component size",
+      "required": false,
+      "description_zh": "组件尺寸"
+    },
+    "type": {
+      "default": "",
+      "value": "",
+      "type": "DatePickerType",
+      "description": "Picker type: range, multiple or default",
+      "required": false,
+      "description_zh": "选取器类型：范围、多个或默认"
+    },
+    "value": {
+      "default": "",
+      "value": "",
+      "type": "DateValue | DatesRangeValue | Date[]",
+      "description": "Value for controlled component",
+      "required": false,
+      "description_zh": "受控组件的值"
+    },
+    "withCellSpacing": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether controls should be separated by spacing, true by default",
+      "required": false,
+      "description_zh": "确定是否应使用空格分隔控件，默认情况下为 true"
+    },
+    "yearsListFormat": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Dayjs format for years list, 'YYYY' by default",
+      "required": false,
+      "description_zh": "年份列表的 Dayjs 格式，默认为 'YYYY'"
+    }
+  },
+  "link": "https://mantine.dev/dates/year-picker/?t=props",
+  "link_zh": "https://mantine.dev/dates/year-picker/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "YearPicker"
+}
