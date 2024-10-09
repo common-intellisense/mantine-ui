@@ -1,0 +1,349 @@
+{
+  "name": "AreaChart",
+  "props": {
+    "activeDotProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to all active dots. Ignored if withDots={false} is set.",
+      "required": false,
+      "description_zh": "Props 向下传递到所有活动点。如果设置了 withDots={false}，则忽略。"
+    },
+    "areaChartProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts AreaChart component",
+      "required": false,
+      "description_zh": "传递给 recharts AreaChart 组件的 props"
+    },
+    "areaProps": {
+      "default": "",
+      "value": "",
+      "type": "((series: AreaChartSeries) => Partial<Omit<Props, \"ref\">>) | Partial<Omit<Props, \"ref\">>",
+      "description": "Props passed down to recharts Area component",
+      "required": false,
+      "description_zh": "传递给 recharts Area 组件的 props"
+    },
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Additional components that are rendered inside recharts AreaChart component",
+      "required": false,
+      "description_zh": "在 recharts AreaChart 组件中呈现的其他组件"
+    },
+    "connectNulls": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether points with null values should be connected, true by default",
+      "required": false,
+      "description_zh": "确定是否应连接具有 null 值的点，默认情况下为 true"
+    },
+    "curveType": {
+      "default": "",
+      "value": "",
+      "type": "AreaChartCurveType",
+      "description": "Type of the curve, 'monotone' by default",
+      "required": false,
+      "description_zh": "曲线类型，默认为 '单调'"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "ChartData",
+      "description": "Data used to display chart",
+      "required": false,
+      "description_zh": "用于显示图表的数据"
+    },
+    "dataKey *": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the data object for x-axis values",
+      "required": false,
+      "description_zh": "x 轴值的数据对象的键"
+    },
+    "dotProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to all dots. Ignored if withDots={false} is set.",
+      "required": false,
+      "description_zh": "Props 向下传递到所有点。如果设置了 withDots={false}，则忽略。"
+    },
+    "fillOpacity": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls fill opacity of all areas, 0.2 by default",
+      "required": false,
+      "description_zh": "控制所有区域的填充不透明度，默认为 0.2"
+    },
+    "gridAxis": {
+      "default": "",
+      "value": "",
+      "type": "none / x / y / xy",
+      "description": "Specifies which lines should be displayed in the grid, 'x' by default",
+      "required": false,
+      "description_zh": "指定网格中应显示哪些线条，默认为 'x'"
+    },
+    "gridColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the grid and cursor lines, by default depends on color scheme",
+      "required": false,
+      "description_zh": "网格和光标线的颜色，默认情况下取决于配色方案"
+    },
+    "gridProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the CartesianGrid component",
+      "required": false,
+      "description_zh": "向下传递到 CartesianGrid 组件的 props"
+    },
+    "legendProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the Legend component",
+      "required": false,
+      "description_zh": "传递给 Legend 组件的 props"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "horizontal / vertical",
+      "description": "Chart orientation, 'horizontal' by default",
+      "required": false,
+      "description_zh": "图表方向，默认为 '水平'"
+    },
+    "referenceLines": {
+      "default": "",
+      "value": "",
+      "type": "ChartReferenceLineProps[]",
+      "description": "Reference lines that should be displayed on the chart",
+      "required": false,
+      "description_zh": "图表上应显示的参考线"
+    },
+    "rightYAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display next to the right y-axis",
+      "required": false,
+      "description_zh": "要在右侧 y 轴旁边显示的标签"
+    },
+    "rightYAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the YAxis recharts component rendered on the right side",
+      "required": false,
+      "description_zh": "向下传递到右侧渲染的 YAxis recharts 组件的 props"
+    },
+    "series *": {
+      "default": "",
+      "value": "",
+      "type": "AreaChartSeries[]",
+      "description": "An array of objects with name and color keys. Determines which data should be consumed from the data array.",
+      "required": false,
+      "description_zh": "具有 name 和 color 键的对象数组。确定应使用数据数组中的哪些数据。"
+    },
+    "splitColors": {
+      "default": "",
+      "value": "",
+      "type": "[MantineColor, MantineColor]",
+      "description": "A tuple of colors used when type=\"split\" is set, ignored in all other cases. A tuple may include theme colors reference or any valid CSS colors ['green.7', 'red.7'] by default.",
+      "required": false,
+      "description_zh": "设置 type=“split” 时使用的颜色元组，在所有其他情况下都将被忽略。默认情况下，元组可以包含主题颜色引用或任何有效的 CSS 颜色 ['green.7'， 'red.7']。"
+    },
+    "splitOffset": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Offset for the split gradient. By default, value is inferred from data and series if possible. Must be generated from the data array with getSplitOffset function.",
+      "required": false,
+      "description_zh": "拆分渐变的偏移量。默认情况下，如果可能，将从 data 和 series 推断 value。必须使用 getSplitOffset 函数从数据数组生成。"
+    },
+    "strokeDasharray": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Dash array for the grid lines and cursor, '5 5' by default",
+      "required": false,
+      "description_zh": "网格线和光标的虚线数组，默认为 '5 5'"
+    },
+    "strokeWidth": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Stroke width for the chart areas, 2 by default",
+      "required": false,
+      "description_zh": "图表区的描边宽度，默认为 2"
+    },
+    "textColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the text displayed inside the chart, 'dimmed' by default",
+      "required": false,
+      "description_zh": "图表内显示的文本颜色，默认为 'dimmed'"
+    },
+    "tickLine": {
+      "default": "",
+      "value": "",
+      "type": "none / x / y / xy",
+      "description": "Specifies which axis should have tick line, 'y' by default",
+      "required": false,
+      "description_zh": "指定哪个轴应具有刻度线，默认为 'y'"
+    },
+    "tooltipAnimationDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Tooltip position animation duration in ms, 0 by default",
+      "required": false,
+      "description_zh": "工具提示位置动画持续时间（以毫秒为单位），默认为 0"
+    },
+    "tooltipProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the Tooltip component",
+      "required": false,
+      "description_zh": "向下传递到 Tooltip 组件的 props"
+    },
+    "type": {
+      "default": "",
+      "value": "",
+      "type": "AreaChartType",
+      "description": "Controls how chart areas are positioned relative to each other, 'default' by default",
+      "required": false,
+      "description_zh": "控制图表区之间的相对位置，默认为 'default'"
+    },
+    "unit": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Unit displayed next to each tick in y-axis",
+      "required": false,
+      "description_zh": "在 y 轴上每个刻度旁边显示的单位"
+    },
+    "valueFormatter": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => string)",
+      "description": "A function to format values on Y axis and inside the tooltip",
+      "required": false,
+      "description_zh": "用于在 Y 轴上和工具提示内设置值格式的函数"
+    },
+    "withDots": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether dots should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示点，默认为 true"
+    },
+    "withGradient": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the chart area should be represented with a gradient instead of the solid color, false by default",
+      "required": false,
+      "description_zh": "确定是否应使用渐变而不是纯色（默认情况下为 false）表示图表区"
+    },
+    "withLegend": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether chart legend should be displayed, false by default",
+      "required": false,
+      "description_zh": "确定是否应显示图表图例，默认为 false"
+    },
+    "withPointLabels": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether each point should have associated label, false by default",
+      "required": false,
+      "description_zh": "确定每个点是否应具有关联的标签，默认情况下为 false"
+    },
+    "withRightYAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether additional y-axis should be displayed on the right side of the chart, false by default",
+      "required": false,
+      "description_zh": "确定是否应在图表右侧显示其他 y 轴，默认情况下为 false"
+    },
+    "withTooltip": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether chart tooltip should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示图表工具提示，默认为 true"
+    },
+    "withXAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether x-axis should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 x 轴，默认为 true"
+    },
+    "withYAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether y-axis should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 y 轴，默认为 true"
+    },
+    "xAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display below the x-axis",
+      "required": false,
+      "description_zh": "要在 x 轴下方显示的标签"
+    },
+    "xAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the XAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 XAxis recharts 组件的 props"
+    },
+    "yAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display next to the y-axis",
+      "required": false,
+      "description_zh": "要在 y 轴旁边显示的标签"
+    },
+    "yAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the YAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 YAxis recharts 组件的 props"
+    }
+  },
+  "link": "https://mantine.dev/charts/area-chart/?t=props",
+  "link_zh": "https://mantine.dev/charts/area-chart/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "AreaChart"
+}

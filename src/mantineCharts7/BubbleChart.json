@@ -1,0 +1,125 @@
+{
+  "name": "BubbleChart",
+  "props": {
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the chart items. Key of theme.colors or any valid CSS color, blue.6 by default.",
+      "required": false,
+      "description_zh": "图表项目的颜色。theme.colors 的键或任何有效的 CSS 颜色，默认为 blue.6。"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>[]",
+      "description": "Chart data",
+      "required": false,
+      "description_zh": "图表数据"
+    },
+    "dataKey *": {
+      "default": "",
+      "value": "",
+      "type": "BubbleChartDataKey",
+      "description": "Data keys for x, y and z axis",
+      "required": false,
+      "description_zh": "x、y 和 z 轴的数据键"
+    },
+    "gridColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the grid and cursor lines, by default depends on color scheme",
+      "required": false,
+      "description_zh": "网格和光标线的颜色，默认情况下取决于配色方案"
+    },
+    "label": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Chart label displayed next to the x axis",
+      "required": false,
+      "description_zh": "x 轴旁边显示的图表标签"
+    },
+    "range *": {
+      "default": "",
+      "value": "",
+      "type": "[number, number]",
+      "description": "Z axis range",
+      "required": false,
+      "description_zh": "Z 轴范围"
+    },
+    "scatterProps": {
+      "default": "",
+      "value": "",
+      "type": "Partial<Omit<Props, \"ref\">>",
+      "description": "Props passed down to the Scatter component",
+      "required": false,
+      "description_zh": "向下传递到 Scatter 组件的 props"
+    },
+    "textColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the text displayed inside the chart, 'dimmed' by default",
+      "required": false,
+      "description_zh": "图表内显示的文本颜色，默认为 'dimmed'"
+    },
+    "tooltipProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the Tooltip component",
+      "required": false,
+      "description_zh": "向下传递到 Tooltip 组件的 props"
+    },
+    "valueFormatter": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => string)",
+      "description": "Function to format z axis values",
+      "required": false,
+      "description_zh": "格式化 z 轴值的函数"
+    },
+    "withTooltip": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the tooltip should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示工具提示，默认为 true"
+    },
+    "xAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the XAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 XAxis recharts 组件的 props"
+    },
+    "yAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the YAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 YAxis recharts 组件的 props"
+    },
+    "zAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the ZAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 ZAxis recharts 组件的 props"
+    }
+  },
+  "link": "https://mantine.dev/charts/bubble-chart/?t=props",
+  "link_zh": "https://mantine.dev/charts/bubble-chart/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "BubbleChart"
+}

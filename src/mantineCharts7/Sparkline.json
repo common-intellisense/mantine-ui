@@ -1,0 +1,85 @@
+{
+  "name": "Sparkline",
+  "props": {
+    "areaProps": {
+      "default": "",
+      "value": "",
+      "type": "Omit<Props, \"ref\" | \"data\" | \"dataKey\">",
+      "description": "Props passed down to the underlying recharts Area component",
+      "required": false,
+      "description_zh": "传递给底层 recharts Area 组件的 props"
+    },
+    "color": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Key of theme.colors or any valid CSS color, theme.primaryColor by default",
+      "required": false,
+      "description_zh": "theme.colors 的键或任何有效的 CSS 颜色，默认为 theme.primaryColor"
+    },
+    "connectNulls": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether null values should be connected with other values, true by default",
+      "required": false,
+      "description_zh": "确定是否应将 null 值与其他值连接，默认情况下为 true"
+    },
+    "curveType": {
+      "default": "",
+      "value": "",
+      "type": "AreaChartCurveType",
+      "description": "Type of the curve, 'linear' by default",
+      "required": false,
+      "description_zh": "曲线类型，默认为 'linear'"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "(number | null)[]",
+      "description": "Data used to render the chart",
+      "required": false,
+      "description_zh": "用于呈现图表的数据"
+    },
+    "fillOpacity": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls fill opacity of the area, 0.6 by default",
+      "required": false,
+      "description_zh": "控制区域的填充不透明度，默认为 0.6"
+    },
+    "strokeWidth": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Area stroke width, 2 by default",
+      "required": false,
+      "description_zh": "区域描边宽度，默认为 2"
+    },
+    "trendColors": {
+      "default": "",
+      "value": "",
+      "type": "SparklineTrendColors",
+      "description": "If set, color prop is ignored and chart color is determined by the difference between first and last value.",
+      "required": false,
+      "description_zh": "如果设置，则忽略 color 属性，图表颜色由第一个值和最后一个值之间的差异决定。"
+    },
+    "withGradient": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the chart fill should be a gradient, true by default",
+      "required": false,
+      "description_zh": "确定图表填充是否应为渐变，默认为 true"
+    }
+  },
+  "link": "https://mantine.dev/charts/sparkline/?t=props",
+  "link_zh": "https://mantine.dev/charts/sparkline/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Sparkline"
+}

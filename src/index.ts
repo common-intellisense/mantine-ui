@@ -1,1 +1,1 @@
-export * from './mantineCore7'
+export * from './mantineCharts7'

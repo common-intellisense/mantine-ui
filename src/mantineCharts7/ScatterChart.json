@@ -1,0 +1,253 @@
+{
+  "name": "ScatterChart",
+  "props": {
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "ScatterChartSeries[]",
+      "description": "Data that is used to build the chart",
+      "required": false,
+      "description_zh": "用于构建图表的数据"
+    },
+    "dataKey *": {
+      "default": "",
+      "value": "",
+      "type": "{ x: string; y: string; }",
+      "description": "Keys that should be used to retrieve data from the data array on x and y axis",
+      "required": false,
+      "description_zh": "应该用于从 x 轴和 y 轴上的数据数组中检索数据的键"
+    },
+    "gridAxis": {
+      "default": "",
+      "value": "",
+      "type": "none / x / y / xy",
+      "description": "Specifies which lines should be displayed in the grid, 'x' by default",
+      "required": false,
+      "description_zh": "指定网格中应显示哪些线条，默认为 'x'"
+    },
+    "gridColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the grid and cursor lines, by default depends on color scheme",
+      "required": false,
+      "description_zh": "网格和光标线的颜色，默认情况下取决于配色方案"
+    },
+    "gridProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the CartesianGrid component",
+      "required": false,
+      "description_zh": "向下传递到 CartesianGrid 组件的 props"
+    },
+    "labels": {
+      "default": "",
+      "value": "",
+      "type": "{ x?: string; y?: string | undefined; } | undefined",
+      "description": "Labels that should be used instead of keys names in the tooltip",
+      "required": false,
+      "description_zh": "应该在工具提示中使用标签而不是键名"
+    },
+    "legendProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the Legend component",
+      "required": false,
+      "description_zh": "传递给 Legend 组件的 props"
+    },
+    "orientation": {
+      "default": "",
+      "value": "",
+      "type": "horizontal / vertical",
+      "description": "Chart orientation, 'horizontal' by default",
+      "required": false,
+      "description_zh": "图表方向，默认为 '水平'"
+    },
+    "pointLabels": {
+      "default": "",
+      "value": "",
+      "type": "x / y",
+      "description": "If set, displays labels next to points for the given axis",
+      "required": false,
+      "description_zh": "如果设置，则在给定轴的点旁边显示标签"
+    },
+    "referenceLines": {
+      "default": "",
+      "value": "",
+      "type": "ChartReferenceLineProps[]",
+      "description": "Reference lines that should be displayed on the chart",
+      "required": false,
+      "description_zh": "图表上应显示的参考线"
+    },
+    "rightYAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display next to the right y-axis",
+      "required": false,
+      "description_zh": "要在右侧 y 轴旁边显示的标签"
+    },
+    "rightYAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the YAxis recharts component rendered on the right side",
+      "required": false,
+      "description_zh": "向下传递到右侧渲染的 YAxis recharts 组件的 props"
+    },
+    "scatterChartProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts ScatterChart component",
+      "required": false,
+      "description_zh": "传递给 recharts ScatterChart 组件的 props"
+    },
+    "scatterProps": {
+      "default": "",
+      "value": "",
+      "type": "Partial<Omit<Props, \"ref\">>",
+      "description": "Props passed down to recharts Scatter component",
+      "required": false,
+      "description_zh": "传递给 recharts Scatter 组件的 props"
+    },
+    "strokeDasharray": {
+      "default": "",
+      "value": "",
+      "type": "string | number",
+      "description": "Dash array for the grid lines and cursor, '5 5' by default",
+      "required": false,
+      "description_zh": "网格线和光标的虚线数组，默认为 '5 5'"
+    },
+    "textColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Color of the text displayed inside the chart, 'dimmed' by default",
+      "required": false,
+      "description_zh": "图表内显示的文本颜色，默认为 'dimmed'"
+    },
+    "tickLine": {
+      "default": "",
+      "value": "",
+      "type": "none / x / y / xy",
+      "description": "Specifies which axis should have tick line, 'y' by default",
+      "required": false,
+      "description_zh": "指定哪个轴应具有刻度线，默认为 'y'"
+    },
+    "tooltipAnimationDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Tooltip position animation duration in ms, 0 by default",
+      "required": false,
+      "description_zh": "工具提示位置动画持续时间（以毫秒为单位），默认为 0"
+    },
+    "tooltipProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the Tooltip component",
+      "required": false,
+      "description_zh": "向下传递到 Tooltip 组件的 props"
+    },
+    "unit": {
+      "default": "",
+      "value": "",
+      "type": "{ x?: string; y?: string | undefined; } | undefined",
+      "description": "Units displayed after value on axis and inside the tooltip",
+      "required": false,
+      "description_zh": "在轴上和工具提示内的值之后显示的单位"
+    },
+    "valueFormatter": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => string) | { x?: ((value: number) => string); y?: ((value: number) => string) | undefined; } | undefined",
+      "description": "A function to format values on x/y axis and in the tooltip",
+      "required": false,
+      "description_zh": "用于在 x/y 轴和工具提示中格式化值的函数"
+    },
+    "withLegend": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether chart legend should be displayed, false by default",
+      "required": false,
+      "description_zh": "确定是否应显示图表图例，默认为 false"
+    },
+    "withRightYAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether additional y-axis should be displayed on the right side of the chart, false by default",
+      "required": false,
+      "description_zh": "确定是否应在图表右侧显示其他 y 轴，默认情况下为 false"
+    },
+    "withTooltip": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether chart tooltip should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示图表工具提示，默认为 true"
+    },
+    "withXAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether x-axis should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 x 轴，默认为 true"
+    },
+    "withYAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether y-axis should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 y 轴，默认为 true"
+    },
+    "xAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display below the x-axis",
+      "required": false,
+      "description_zh": "要在 x 轴下方显示的标签"
+    },
+    "xAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the XAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 XAxis recharts 组件的 props"
+    },
+    "yAxisLabel": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "A label to display next to the y-axis",
+      "required": false,
+      "description_zh": "要在 y 轴旁边显示的标签"
+    },
+    "yAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to the YAxis recharts component",
+      "required": false,
+      "description_zh": "传递给 YAxis recharts 组件的 props"
+    }
+  },
+  "link": "https://mantine.dev/charts/scatter-chart/?t=props",
+  "link_zh": "https://mantine.dev/charts/scatter-chart/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ScatterChart"
+}

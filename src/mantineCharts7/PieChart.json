@@ -1,0 +1,173 @@
+{
+  "name": "PieChart",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Additional elements rendered inside PieChart component",
+      "required": false,
+      "description_zh": "在 PieChart 组件中渲染的其他元素"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "PieChartCell[]",
+      "description": "Data used to render chart",
+      "required": false,
+      "description_zh": "用于呈现图表的数据"
+    },
+    "endAngle": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls angle at which charts ends, 360 by default. Set to 0 to render the chart as semicircle.",
+      "required": false,
+      "description_zh": "控制图表结束的角度，默认为 360。设置为 0 可将图表呈现为半圆。"
+    },
+    "labelColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Controls text color of all labels, white by default",
+      "required": false,
+      "description_zh": "控制所有标签的文本颜色，默认为白色"
+    },
+    "labelsPosition": {
+      "default": "",
+      "value": "",
+      "type": "outside / inside",
+      "description": "Controls labels position relative to the segment, 'outside' by default",
+      "required": false,
+      "description_zh": "控制标签相对于线段的位置，默认为 'outside'"
+    },
+    "labelsType": {
+      "default": "",
+      "value": "",
+      "type": "value / percent",
+      "description": "Type of labels to display, 'value' by default",
+      "required": false,
+      "description_zh": "要显示的标签类型，默认为 'value'"
+    },
+    "paddingAngle": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls padding between segments, 0 by default",
+      "required": false,
+      "description_zh": "控制段之间的填充，默认为 0"
+    },
+    "pieChartProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts PieChart component",
+      "required": false,
+      "description_zh": "传递给 recharts PieChart 组件的 props"
+    },
+    "pieProps": {
+      "default": "",
+      "value": "",
+      "type": "Partial<Omit<Props, \"ref\">>",
+      "description": "Props passed down to recharts Pie component",
+      "required": false,
+      "description_zh": "传递给 recharts Pie 组件的 props"
+    },
+    "size": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls chart width and height, height is increased by 40 if withLabels prop is set. Cannot be less than thickness. 80 by default",
+      "required": false,
+      "description_zh": "控制图表的宽度和高度，如果设置了 withLabels 属性，则高度增加 40。不能小于 thickness。默认为 80"
+    },
+    "startAngle": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls angle at which chart starts, 0 by default. Set to 180 to render the chart as semicircle.",
+      "required": false,
+      "description_zh": "控制图表开始的角度，默认为 0。设置为 180 可将图表呈现为半圆。"
+    },
+    "strokeColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Controls color of the segments stroke, by default depends on color scheme",
+      "required": false,
+      "description_zh": "控制段落描边的颜色，默认情况下取决于颜色方案"
+    },
+    "strokeWidth": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Controls width of segments stroke, 1 by default",
+      "required": false,
+      "description_zh": "控制线段描边的宽度，默认为 1"
+    },
+    "tooltipAnimationDuration": {
+      "default": "",
+      "value": "",
+      "type": "number",
+      "description": "Tooltip animation duration in ms, 0 by default",
+      "required": false,
+      "description_zh": "工具提示动画持续时间（以毫秒为单位），默认为 0"
+    },
+    "tooltipDataSource": {
+      "default": "",
+      "value": "",
+      "type": "all / segment",
+      "description": "Determines which data is displayed in the tooltip. 'all' – display all values, 'segment' – display only hovered segment. 'all' by default.",
+      "required": false,
+      "description_zh": "确定在工具提示中显示哪些数据。'all' – 显示所有值，'segment' – 仅显示悬停的区段。'all' 来指定。"
+    },
+    "tooltipProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to Tooltip recharts component",
+      "required": false,
+      "description_zh": "传递给 Tooltip recharts 组件的 props"
+    },
+    "valueFormatter": {
+      "default": "",
+      "value": "",
+      "type": "((value: number) => string)",
+      "description": "A function to format values inside the tooltip",
+      "required": false,
+      "description_zh": "用于格式化工具提示内值的函数"
+    },
+    "withLabels": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether each segment should have associated label, false by default",
+      "required": false,
+      "description_zh": "确定每个区段是否应具有关联的标签，默认情况下为 false"
+    },
+    "withLabelsLine": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether segments labels should have lines that connect the segment with the label, true by default",
+      "required": false,
+      "description_zh": "确定区段标签是否应包含将区段与标签连接的线，默认情况下为 true"
+    },
+    "withTooltip": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the tooltip should be displayed when one of the section is hovered, true by default",
+      "required": false,
+      "description_zh": "确定当其中一个部分悬停时是否应显示工具提示，默认情况下为 true"
+    }
+  },
+  "link": "https://mantine.dev/charts/pie-chart/?t=props",
+  "link_zh": "https://mantine.dev/charts/pie-chart/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "PieChart"
+}

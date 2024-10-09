@@ -1,0 +1,141 @@
+{
+  "name": "RadarChart",
+  "props": {
+    "children": {
+      "default": "",
+      "value": "",
+      "type": "React.ReactNode",
+      "description": "Additional components that are rendered inside recharts RadarChart component",
+      "required": false,
+      "description_zh": "在 recharts RadarChart 组件中呈现的其他组件"
+    },
+    "data *": {
+      "default": "",
+      "value": "",
+      "type": "Record<string, any>[]",
+      "description": "Data used in the chart",
+      "required": false,
+      "description_zh": "图表中使用的数据"
+    },
+    "dataKey *": {
+      "default": "",
+      "value": "",
+      "type": "string",
+      "description": "Key of the data object for axis values",
+      "required": false,
+      "description_zh": "轴值的数据对象的键"
+    },
+    "gridColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Controls color of the grid lines. By default, color depends on the color scheme.",
+      "required": false,
+      "description_zh": "控制网格线的颜色。默认情况下，颜色取决于颜色方案。"
+    },
+    "legendProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts Legend component",
+      "required": false,
+      "description_zh": "传递给 recharts Legend 组件的 props"
+    },
+    "polarAngleAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts PolarAngleAxis component",
+      "required": false,
+      "description_zh": "传递给 recharts PolarAngleAxis 组件的 props"
+    },
+    "polarGridProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts PolarGrid component",
+      "required": false,
+      "description_zh": "传递给 recharts PolarGrid 组件的 props"
+    },
+    "polarRadiusAxisProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts PolarRadiusAxis component",
+      "required": false,
+      "description_zh": "传递给 recharts PolarRadiusAxis 组件的 props"
+    },
+    "radarChartProps": {
+      "default": "",
+      "value": "",
+      "type": "RechartsProps",
+      "description": "Props passed down to recharts RadarChart component",
+      "required": false,
+      "description_zh": "传递给 recharts RadarChart 组件的 props"
+    },
+    "radarProps": {
+      "default": "",
+      "value": "",
+      "type": "((series: RadarChartSeries) => Partial<Omit<Props, \"ref\">>) | Partial<Omit<Props, \"ref\">>",
+      "description": "Props passed down to recharts Radar component",
+      "required": false,
+      "description_zh": "传递给 recharts Radar 组件的 props"
+    },
+    "series *": {
+      "default": "",
+      "value": "",
+      "type": "RadarChartSeries[]",
+      "description": "Determines which data should be consumed from the data array.",
+      "required": false,
+      "description_zh": "确定应使用数据数组中的哪些数据。"
+    },
+    "textColor": {
+      "default": "",
+      "value": "",
+      "type": "MantineColor",
+      "description": "Controls color of all text elements. By default, color depends on the color scheme.",
+      "required": false,
+      "description_zh": "控制所有文本元素的颜色。默认情况下，颜色取决于颜色方案。"
+    },
+    "withLegend": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether the legend should be displayed, false by default",
+      "required": false,
+      "description_zh": "确定是否应显示图例，默认为 false"
+    },
+    "withPolarAngleAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether PolarAngleAxis component should be displayed, true by default",
+      "required": false,
+      "description_zh": "确定是否应显示 PolarAngleAxis 组件，默认情况下为 true"
+    },
+    "withPolarGrid": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether PolarGrid component should be displayed, true by default.",
+      "required": false,
+      "description_zh": "确定是否应显示 PolarGrid 组件，默认情况下为 true。"
+    },
+    "withPolarRadiusAxis": {
+      "default": "",
+      "value": "",
+      "type": "boolean",
+      "description": "Determines whether PolarRadiusAxisProps component should be displayed, false by default",
+      "required": false,
+      "description_zh": "确定是否应显示 PolarRadiusAxisProps 组件，默认为 false"
+    }
+  },
+  "link": "https://mantine.dev/charts/radar-chart/?t=props",
+  "link_zh": "https://mantine.dev/charts/radar-chart/?t=props",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "RadarChart"
+}
